@@ -35,4 +35,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)showPollingLocation:(id)sender{
+}
+
+-(IBAction)printBallot:(id)sender{
+}
+
 @end
