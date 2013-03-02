@@ -10,4 +10,7 @@
 
 @interface StartViewController : UIViewController
 
+@property (strong) IBOutlet UIButton *checkinButton;
+@property (strong) IBOutlet UIButton *adminButton;
+
 @end
