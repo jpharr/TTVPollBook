@@ -24,6 +24,8 @@
 		784A22C116E28F6F0066868D /* VoterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784A22BF16E28F6F0066868D /* VoterDetailViewController.xib */; };
 		784A22C516E28F8F0066868D /* PollDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22C316E28F8F0066868D /* PollDetailViewController.m */; };
 		784A22C616E28F8F0066868D /* PollDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784A22C416E28F8F0066868D /* PollDetailViewController.xib */; };
+		784A22CA16E291E90066868D /* ScanIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22C816E291E90066868D /* ScanIDViewController.m */; };
+		784A22CB16E291E90066868D /* ScanIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784A22C916E291E90066868D /* ScanIDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,9 @@
 		784A22C216E28F8F0066868D /* PollDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollDetailViewController.h; sourceTree = "<group>"; };
 		784A22C316E28F8F0066868D /* PollDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollDetailViewController.m; sourceTree = "<group>"; };
 		784A22C416E28F8F0066868D /* PollDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PollDetailViewController.xib; sourceTree = "<group>"; };
+		784A22C716E291E90066868D /* ScanIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanIDViewController.h; sourceTree = "<group>"; };
+		784A22C816E291E90066868D /* ScanIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanIDViewController.m; sourceTree = "<group>"; };
+		784A22C916E291E90066868D /* ScanIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +118,9 @@
 				784A22BE16E28F6F0066868D /* VoterDetailViewController.m */,
 				784A22BF16E28F6F0066868D /* VoterDetailViewController.xib */,
 				784A229716E270370066868D /* Supporting Files */,
+				784A22C716E291E90066868D /* ScanIDViewController.h */,
+				784A22C816E291E90066868D /* ScanIDViewController.m */,
+				784A22C916E291E90066868D /* ScanIDViewController.xib */,
 			);
 			path = TTVPollBook;
 			sourceTree = "<group>";
@@ -190,6 +198,7 @@
 				784A22BC16E28F510066868D /* SearchViewController.xib in Resources */,
 				784A22C116E28F6F0066868D /* VoterDetailViewController.xib in Resources */,
 				784A22C616E28F8F0066868D /* PollDetailViewController.xib in Resources */,
+				784A22CB16E291E90066868D /* ScanIDViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +215,7 @@
 				784A22BB16E28F510066868D /* SearchViewController.m in Sources */,
 				784A22C016E28F6F0066868D /* VoterDetailViewController.m in Sources */,
 				784A22C516E28F8F0066868D /* PollDetailViewController.m in Sources */,
+				784A22CA16E291E90066868D /* ScanIDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
