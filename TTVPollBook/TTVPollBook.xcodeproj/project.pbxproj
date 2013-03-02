@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		784A229116E270370066868D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A229016E270370066868D /* UIKit.framework */; };
+		784A229316E270370066868D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A229216E270370066868D /* Foundation.framework */; };
+		784A229516E270370066868D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A229416E270370066868D /* CoreGraphics.framework */; };
+		784A229B16E270370066868D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 784A229916E270370066868D /* InfoPlist.strings */; };
+		784A229D16E270370066868D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A229C16E270370066868D /* main.m */; };
+		784A22A116E270370066868D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22A016E270370066868D /* AppDelegate.m */; };
+		784A22A316E270370066868D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 784A22A216E270370066868D /* Default.png */; };
+		784A22A516E270370066868D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 784A22A416E270370066868D /* Default@2x.png */; };
+		784A22A716E270370066868D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 784A22A616E270370066868D /* Default-568h@2x.png */; };
+		784A22AA16E270370066868D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784A22A816E270370066868D /* MainStoryboard.storyboard */; };
+		784A22AD16E270370066868D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22AC16E270370066868D /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		784A228D16E270370066868D /* TTVPollBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTVPollBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		784A229016E270370066868D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		784A229216E270370066868D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		784A229416E270370066868D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		784A229816E270370066868D /* TTVPollBook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TTVPollBook-Info.plist"; sourceTree = "<group>"; };
+		784A229A16E270370066868D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		784A229C16E270370066868D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		784A229E16E270370066868D /* TTVPollBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TTVPollBook-Prefix.pch"; sourceTree = "<group>"; };
+		784A229F16E270370066868D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		784A22A016E270370066868D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		784A22A216E270370066868D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		784A22A416E270370066868D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		784A22A616E270370066868D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		784A22A916E270370066868D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		784A22AB16E270370066868D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		784A22AC16E270370066868D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		784A228A16E270370066868D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784A229116E270370066868D /* UIKit.framework in Frameworks */,
+				784A229316E270370066868D /* Foundation.framework in Frameworks */,
+				784A229516E270370066868D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		784A228416E270370066868D = {
+			isa = PBXGroup;
+			children = (
+				784A229616E270370066868D /* TTVPollBook */,
+				784A228F16E270370066868D /* Frameworks */,
+				784A228E16E270370066868D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		784A228E16E270370066868D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				784A228D16E270370066868D /* TTVPollBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		784A228F16E270370066868D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				784A229016E270370066868D /* UIKit.framework */,
+				784A229216E270370066868D /* Foundation.framework */,
+				784A229416E270370066868D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		784A229616E270370066868D /* TTVPollBook */ = {
+			isa = PBXGroup;
+			children = (
+				784A229F16E270370066868D /* AppDelegate.h */,
+				784A22A016E270370066868D /* AppDelegate.m */,
+				784A22A816E270370066868D /* MainStoryboard.storyboard */,
+				784A22AB16E270370066868D /* ViewController.h */,
+				784A22AC16E270370066868D /* ViewController.m */,
+				784A229716E270370066868D /* Supporting Files */,
+			);
+			path = TTVPollBook;
+			sourceTree = "<group>";
+		};
+		784A229716E270370066868D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				784A229816E270370066868D /* TTVPollBook-Info.plist */,
+				784A229916E270370066868D /* InfoPlist.strings */,
+				784A229C16E270370066868D /* main.m */,
+				784A229E16E270370066868D /* TTVPollBook-Prefix.pch */,
+				784A22A216E270370066868D /* Default.png */,
+				784A22A416E270370066868D /* Default@2x.png */,
+				784A22A616E270370066868D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		784A228C16E270370066868D /* TTVPollBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 784A22B016E270370066868D /* Build configuration list for PBXNativeTarget "TTVPollBook" */;
+			buildPhases = (
+				784A228916E270370066868D /* Sources */,
+				784A228A16E270370066868D /* Frameworks */,
+				784A228B16E270370066868D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTVPollBook;
+			productName = TTVPollBook;
+			productReference = 784A228D16E270370066868D /* TTVPollBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		784A228516E270370066868D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Jeff Pharr";
+			};
+			buildConfigurationList = 784A228816E270370066868D /* Build configuration list for PBXProject "TTVPollBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 784A228416E270370066868D;
+			productRefGroup = 784A228E16E270370066868D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				784A228C16E270370066868D /* TTVPollBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		784A228B16E270370066868D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784A229B16E270370066868D /* InfoPlist.strings in Resources */,
+				784A22A316E270370066868D /* Default.png in Resources */,
+				784A22A516E270370066868D /* Default@2x.png in Resources */,
+				784A22A716E270370066868D /* Default-568h@2x.png in Resources */,
+				784A22AA16E270370066868D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		784A228916E270370066868D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				784A229D16E270370066868D /* main.m in Sources */,
+				784A22A116E270370066868D /* AppDelegate.m in Sources */,
+				784A22AD16E270370066868D /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		784A229916E270370066868D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				784A229A16E270370066868D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		784A22A816E270370066868D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				784A22A916E270370066868D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		784A22AE16E270370066868D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		784A22AF16E270370066868D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		784A22B116E270370066868D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TTVPollBook/TTVPollBook-Prefix.pch";
+				INFOPLIST_FILE = "TTVPollBook/TTVPollBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		784A22B216E270370066868D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TTVPollBook/TTVPollBook-Prefix.pch";
+				INFOPLIST_FILE = "TTVPollBook/TTVPollBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		784A228816E270370066868D /* Build configuration list for PBXProject "TTVPollBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784A22AE16E270370066868D /* Debug */,
+				784A22AF16E270370066868D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		784A22B016E270370066868D /* Build configuration list for PBXNativeTarget "TTVPollBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				784A22B116E270370066868D /* Debug */,
+				784A22B216E270370066868D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 784A228516E270370066868D /* Project object */;
+}
