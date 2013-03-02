@@ -18,6 +18,12 @@
 		784A22A716E270370066868D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 784A22A616E270370066868D /* Default-568h@2x.png */; };
 		784A22B616E28E200066868D /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22B416E28E200066868D /* StartViewController.m */; };
 		784A22B716E28E200066868D /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784A22B516E28E200066868D /* StartViewController.xib */; };
+		784A22BB16E28F510066868D /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22B916E28F510066868D /* SearchViewController.m */; };
+		784A22BC16E28F510066868D /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784A22BA16E28F510066868D /* SearchViewController.xib */; };
+		784A22C016E28F6F0066868D /* VoterDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22BE16E28F6F0066868D /* VoterDetailViewController.m */; };
+		784A22C116E28F6F0066868D /* VoterDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784A22BF16E28F6F0066868D /* VoterDetailViewController.xib */; };
+		784A22C516E28F8F0066868D /* PollDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22C316E28F8F0066868D /* PollDetailViewController.m */; };
+		784A22C616E28F8F0066868D /* PollDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784A22C416E28F8F0066868D /* PollDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +43,15 @@
 		784A22B316E28E200066868D /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		784A22B416E28E200066868D /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		784A22B516E28E200066868D /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		784A22B816E28F510066868D /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		784A22B916E28F510066868D /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		784A22BA16E28F510066868D /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		784A22BD16E28F6F0066868D /* VoterDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoterDetailViewController.h; sourceTree = "<group>"; };
+		784A22BE16E28F6F0066868D /* VoterDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoterDetailViewController.m; sourceTree = "<group>"; };
+		784A22BF16E28F6F0066868D /* VoterDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VoterDetailViewController.xib; sourceTree = "<group>"; };
+		784A22C216E28F8F0066868D /* PollDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollDetailViewController.h; sourceTree = "<group>"; };
+		784A22C316E28F8F0066868D /* PollDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollDetailViewController.m; sourceTree = "<group>"; };
+		784A22C416E28F8F0066868D /* PollDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PollDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +100,18 @@
 			children = (
 				784A229F16E270370066868D /* AppDelegate.h */,
 				784A22A016E270370066868D /* AppDelegate.m */,
+				784A22C216E28F8F0066868D /* PollDetailViewController.h */,
+				784A22C316E28F8F0066868D /* PollDetailViewController.m */,
+				784A22C416E28F8F0066868D /* PollDetailViewController.xib */,
 				784A22B316E28E200066868D /* StartViewController.h */,
 				784A22B416E28E200066868D /* StartViewController.m */,
 				784A22B516E28E200066868D /* StartViewController.xib */,
+				784A22B816E28F510066868D /* SearchViewController.h */,
+				784A22B916E28F510066868D /* SearchViewController.m */,
+				784A22BA16E28F510066868D /* SearchViewController.xib */,
+				784A22BD16E28F6F0066868D /* VoterDetailViewController.h */,
+				784A22BE16E28F6F0066868D /* VoterDetailViewController.m */,
+				784A22BF16E28F6F0066868D /* VoterDetailViewController.xib */,
 				784A229716E270370066868D /* Supporting Files */,
 			);
 			path = TTVPollBook;
@@ -163,6 +187,9 @@
 				784A22A516E270370066868D /* Default@2x.png in Resources */,
 				784A22A716E270370066868D /* Default-568h@2x.png in Resources */,
 				784A22B716E28E200066868D /* StartViewController.xib in Resources */,
+				784A22BC16E28F510066868D /* SearchViewController.xib in Resources */,
+				784A22C116E28F6F0066868D /* VoterDetailViewController.xib in Resources */,
+				784A22C616E28F8F0066868D /* PollDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +203,9 @@
 				784A229D16E270370066868D /* main.m in Sources */,
 				784A22A116E270370066868D /* AppDelegate.m in Sources */,
 				784A22B616E28E200066868D /* StartViewController.m in Sources */,
+				784A22BB16E28F510066868D /* SearchViewController.m in Sources */,
+				784A22C016E28F6F0066868D /* VoterDetailViewController.m in Sources */,
+				784A22C516E28F8F0066868D /* PollDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
