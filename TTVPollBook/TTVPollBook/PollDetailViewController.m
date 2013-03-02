@@ -35,4 +35,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)doneAction:(id)sender{
+}
+
+-(IBAction)txtAction:(id)sender{
+}
+
+-(IBAction)printAction:(id)sender{
+}
+
 @end
