@@ -7,6 +7,7 @@
 //
 
 #import "VoterDetailViewController.h"
+#import "PollDetailViewController.h"
 
 @interface VoterDetailViewController ()
 
@@ -36,9 +37,12 @@
 }
 
 -(IBAction)showPollingLocation:(id)sender{
+    PollDetailViewController *pollView = [[PollDetailViewController alloc] init];
+    [self.navigationController pushViewController:pollView animated:YES];
 }
 
 -(IBAction)printBallot:(id)sender{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

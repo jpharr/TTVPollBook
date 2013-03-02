@@ -7,6 +7,7 @@
 //
 
 #import "StartViewController.h"
+#import "SearchViewController.h"
 
 @interface StartViewController ()
 
@@ -36,6 +37,8 @@
 }
 
 -(IBAction)checkinAction:(id)sender{
+    SearchViewController *searchView = [[SearchViewController alloc] init];
+    [self.navigationController pushViewController:searchView animated:YES];    
 }
 
 @end

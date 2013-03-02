@@ -36,12 +36,15 @@
 }
 
 -(IBAction)doneAction:(id)sender{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(IBAction)txtAction:(id)sender{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 -(IBAction)printAction:(id)sender{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end

@@ -7,6 +7,8 @@
 //
 
 #import "SearchViewController.h"
+#import "VoterDetailViewController.h"
+#import "ScanIDViewController.h"
 
 @interface SearchViewController ()
 
@@ -36,12 +38,17 @@
 }
 
 -(IBAction)scanIDAction:(id)sender{
+    ScanIDViewController *scanView = [[ScanIDViewController alloc] init];
+    [self.navigationController pushViewController:scanView animated:YES];
 }
 
 -(IBAction)rowSelectButtonAction:(id)sender{
+    [self doRowSelectTasks];
 }
 
 -(void)doRowSelectTasks{
+    VoterDetailViewController *voterView = [[VoterDetailViewController alloc] init];
+    [self.navigationController pushViewController:voterView animated:YES];
 }
 
 @end
