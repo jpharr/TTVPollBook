@@ -35,4 +35,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction)scanIDAction:(id)sender{
+}
+
+-(IBAction)rowSelectButtonAction:(id)sender{
+}
+
+-(void)doRowSelectTasks{
+}
+
 @end
