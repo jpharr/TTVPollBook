@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  StartViewController.h
 //  TTVPollBook
 //
 //  Created by Jeff Pharr on 3/2/13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-// Comment
-
+@interface StartViewController : UIViewController
 
 @end
