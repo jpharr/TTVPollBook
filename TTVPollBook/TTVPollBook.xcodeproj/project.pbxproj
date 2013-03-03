@@ -21,7 +21,6 @@
 		784A22A116E270370066868D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22A016E270370066868D /* AppDelegate.m */; };
 		784A22A316E270370066868D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 784A22A216E270370066868D /* Default.png */; };
 		784A22A516E270370066868D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 784A22A416E270370066868D /* Default@2x.png */; };
-		784A22A716E270370066868D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 784A22A616E270370066868D /* Default-568h@2x.png */; };
 		784A22B616E28E200066868D /* StartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22B416E28E200066868D /* StartViewController.m */; };
 		784A22B716E28E200066868D /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784A22B516E28E200066868D /* StartViewController.xib */; };
 		784A22BB16E28F510066868D /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22B916E28F510066868D /* SearchViewController.m */; };
@@ -36,6 +35,8 @@
 		784A22D016E302960066868D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 784A22CE16E302960066868D /* Model.xcdatamodeld */; };
 		784A22D416E3AA3A0066868D /* Voter.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22D316E3AA3A0066868D /* Voter.m */; };
 		784A22D716E3AA650066868D /* PollingPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22D616E3AA650066868D /* PollingPlace.m */; };
+		784A22DA16E3EC3F0066868D /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 784A22D816E3EC3F0066868D /* Icon@2x.png */; };
+		784A22DB16E3EC3F0066868D /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 784A22D916E3EC3F0066868D /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +58,6 @@
 		784A22A016E270370066868D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		784A22A216E270370066868D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		784A22A416E270370066868D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		784A22A616E270370066868D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		784A22B316E28E200066868D /* StartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartViewController.h; sourceTree = "<group>"; };
 		784A22B416E28E200066868D /* StartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartViewController.m; sourceTree = "<group>"; };
 		784A22B516E28E200066868D /* StartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
@@ -79,6 +79,8 @@
 		784A22D316E3AA3A0066868D /* Voter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voter.m; sourceTree = "<group>"; };
 		784A22D516E3AA650066868D /* PollingPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PollingPlace.h; path = TTVPollBook/PollingPlace.h; sourceTree = "<group>"; };
 		784A22D616E3AA650066868D /* PollingPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PollingPlace.m; path = TTVPollBook/PollingPlace.m; sourceTree = "<group>"; };
+		784A22D816E3EC3F0066868D /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		784A22D916E3EC3F0066868D /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,13 +169,14 @@
 		784A229716E270370066868D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				784A22D816E3EC3F0066868D /* Icon@2x.png */,
+				784A22D916E3EC3F0066868D /* Icon.png */,
 				784A229816E270370066868D /* TTVPollBook-Info.plist */,
 				784A229916E270370066868D /* InfoPlist.strings */,
 				784A229C16E270370066868D /* main.m */,
 				784A229E16E270370066868D /* TTVPollBook-Prefix.pch */,
 				784A22A216E270370066868D /* Default.png */,
 				784A22A416E270370066868D /* Default@2x.png */,
-				784A22A616E270370066868D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -245,7 +248,6 @@
 				784A229B16E270370066868D /* InfoPlist.strings in Resources */,
 				784A22A316E270370066868D /* Default.png in Resources */,
 				784A22A516E270370066868D /* Default@2x.png in Resources */,
-				784A22A716E270370066868D /* Default-568h@2x.png in Resources */,
 				784A22B716E28E200066868D /* StartViewController.xib in Resources */,
 				784A22BC16E28F510066868D /* SearchViewController.xib in Resources */,
 				784A22C116E28F6F0066868D /* VoterDetailViewController.xib in Resources */,
@@ -257,6 +259,8 @@
 				7825934816E3AE1D00FB2A80 /* signature.png in Resources */,
 				7825934916E3AE1D00FB2A80 /* button_grey@2x.png in Resources */,
 				7825934A16E3AE1D00FB2A80 /* button_grey.png in Resources */,
+				784A22DA16E3EC3F0066868D /* Icon@2x.png in Resources */,
+				784A22DB16E3EC3F0066868D /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
