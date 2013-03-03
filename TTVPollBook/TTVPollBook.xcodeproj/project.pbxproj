@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7825934516E3AE1D00FB2A80 /* name_block@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825933F16E3AE1D00FB2A80 /* name_block@2x.png */; };
+		7825934616E3AE1D00FB2A80 /* name_block.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825934016E3AE1D00FB2A80 /* name_block.png */; };
+		7825934716E3AE1D00FB2A80 /* signature@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825934116E3AE1D00FB2A80 /* signature@2x.png */; };
+		7825934816E3AE1D00FB2A80 /* signature.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825934216E3AE1D00FB2A80 /* signature.png */; };
+		7825934916E3AE1D00FB2A80 /* button_grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825934316E3AE1D00FB2A80 /* button_grey@2x.png */; };
+		7825934A16E3AE1D00FB2A80 /* button_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825934416E3AE1D00FB2A80 /* button_grey.png */; };
 		784A229116E270370066868D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A229016E270370066868D /* UIKit.framework */; };
 		784A229316E270370066868D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A229216E270370066868D /* Foundation.framework */; };
 		784A229516E270370066868D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A229416E270370066868D /* CoreGraphics.framework */; };
@@ -31,6 +37,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7825933F16E3AE1D00FB2A80 /* name_block@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "name_block@2x.png"; sourceTree = "<group>"; };
+		7825934016E3AE1D00FB2A80 /* name_block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = name_block.png; sourceTree = "<group>"; };
+		7825934116E3AE1D00FB2A80 /* signature@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signature@2x.png"; sourceTree = "<group>"; };
+		7825934216E3AE1D00FB2A80 /* signature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signature.png; sourceTree = "<group>"; };
+		7825934316E3AE1D00FB2A80 /* button_grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_grey@2x.png"; sourceTree = "<group>"; };
+		7825934416E3AE1D00FB2A80 /* button_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_grey.png; sourceTree = "<group>"; };
 		784A228D16E270370066868D /* TTVPollBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTVPollBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		784A229016E270370066868D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		784A229216E270370066868D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,6 +90,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7825933E16E3AE0200FB2A80 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7825933F16E3AE1D00FB2A80 /* name_block@2x.png */,
+				7825934016E3AE1D00FB2A80 /* name_block.png */,
+				7825934116E3AE1D00FB2A80 /* signature@2x.png */,
+				7825934216E3AE1D00FB2A80 /* signature.png */,
+				7825934316E3AE1D00FB2A80 /* button_grey@2x.png */,
+				7825934416E3AE1D00FB2A80 /* button_grey.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		784A228416E270370066868D = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +134,7 @@
 		784A229616E270370066868D /* TTVPollBook */ = {
 			isa = PBXGroup;
 			children = (
+				7825933E16E3AE0200FB2A80 /* Images */,
 				784A229F16E270370066868D /* AppDelegate.h */,
 				784A22A016E270370066868D /* AppDelegate.m */,
 				784A22C216E28F8F0066868D /* PollDetailViewController.h */,
@@ -215,6 +241,12 @@
 				784A22C116E28F6F0066868D /* VoterDetailViewController.xib in Resources */,
 				784A22C616E28F8F0066868D /* PollDetailViewController.xib in Resources */,
 				784A22CB16E291E90066868D /* ScanIDViewController.xib in Resources */,
+				7825934516E3AE1D00FB2A80 /* name_block@2x.png in Resources */,
+				7825934616E3AE1D00FB2A80 /* name_block.png in Resources */,
+				7825934716E3AE1D00FB2A80 /* signature@2x.png in Resources */,
+				7825934816E3AE1D00FB2A80 /* signature.png in Resources */,
+				7825934916E3AE1D00FB2A80 /* button_grey@2x.png in Resources */,
+				7825934A16E3AE1D00FB2A80 /* button_grey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +379,7 @@
 				784A22B216E270370066868D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
