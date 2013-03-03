@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2057" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="PollingPlace" syncable="YES"/>
-    <entity name="Voter" syncable="YES"/>
+    <entity name="PollingPlace" syncable="YES">
+        <attribute name="pollingPlaceAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pollingPlaceCity" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pollingPlaceLatitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pollingPlaceLongtitude" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pollingPlaceName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pollingPlaceState" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pollingPlaceZipCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precinctName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precinctNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Voter" syncable="YES">
+        <attribute name="activeRegistration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="electoralDistrict" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="emailAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="familyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="givenName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasVoted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="localityName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="middleName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="personFullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precinctName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precinctNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="precinctSplitId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="preferredLanguage" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="signatureBlock" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="streetAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="voterIdentificationID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zipCode" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Voter" positionX="160" positionY="192" width="128" height="45"/>
-        <element name="PollingPlace" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="PollingPlace" positionX="160" positionY="192" width="128" height="180"/>
+        <element name="Voter" positionX="160" positionY="192" width="128" height="330"/>
     </elements>
 </model>
