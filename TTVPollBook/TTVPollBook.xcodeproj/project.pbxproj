@@ -28,6 +28,8 @@
 		784A22CB16E291E90066868D /* ScanIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784A22C916E291E90066868D /* ScanIDViewController.xib */; };
 		784A22CD16E3023A0066868D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A22CC16E3023A0066868D /* CoreData.framework */; };
 		784A22D016E302960066868D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 784A22CE16E302960066868D /* Model.xcdatamodeld */; };
+		784A22D416E3AA3A0066868D /* Voter.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22D316E3AA3A0066868D /* Voter.m */; };
+		784A22D716E3AA650066868D /* PollingPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22D616E3AA650066868D /* PollingPlace.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,10 @@
 		784A22C916E291E90066868D /* ScanIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanIDViewController.xib; sourceTree = "<group>"; };
 		784A22CC16E3023A0066868D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		784A22CF16E302960066868D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		784A22D216E3AA3A0066868D /* Voter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Voter.h; sourceTree = "<group>"; };
+		784A22D316E3AA3A0066868D /* Voter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Voter.m; sourceTree = "<group>"; };
+		784A22D516E3AA650066868D /* PollingPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PollingPlace.h; path = TTVPollBook/PollingPlace.h; sourceTree = "<group>"; };
+		784A22D616E3AA650066868D /* PollingPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PollingPlace.m; path = TTVPollBook/PollingPlace.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +156,10 @@
 			isa = PBXGroup;
 			children = (
 				784A22CE16E302960066868D /* Model.xcdatamodeld */,
+				784A22D516E3AA650066868D /* PollingPlace.h */,
+				784A22D616E3AA650066868D /* PollingPlace.m */,
+				784A22D216E3AA3A0066868D /* Voter.h */,
+				784A22D316E3AA3A0066868D /* Voter.m */,
 			);
 			name = "Data Model";
 			path = ..;
@@ -233,6 +243,8 @@
 				784A22C516E28F8F0066868D /* PollDetailViewController.m in Sources */,
 				784A22CA16E291E90066868D /* ScanIDViewController.m in Sources */,
 				784A22D016E302960066868D /* Model.xcdatamodeld in Sources */,
+				784A22D416E3AA3A0066868D /* Voter.m in Sources */,
+				784A22D716E3AA650066868D /* PollingPlace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

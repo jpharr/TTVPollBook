@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "StartViewController.h"
 #import <CoreData/CoreData.h>
+#import "Voter.h"
+#import "PollingPlace.h"
 
 @implementation AppDelegate
 
@@ -27,6 +29,9 @@
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
+    
+    [self seedSampleDBRecord];
+    
     return YES;
 }
 							
@@ -106,6 +111,52 @@
     return _persistentStoreCoordinator;
 }
 
+
+-(void)seedSampleDBRecord{
+    
+	NSError *error;
+    PollingPlace *place;
+    Voter *voter;
+    
+    place = (PollingPlace *)[NSEntityDescription insertNewObjectForEntityForName:@"PollingPlace" inManagedObjectContext:[self managedObjectContext]];
+    
+    [place setPollingPlaceAddress:@"700 Bennett St."];
+    [place setPollingPlaceCity:@"Herndon"];
+    [place setPollingPlaceLatitude:@""];
+    [place setPollingPlaceLongtitude:@""];
+    [place setPollingPlaceName:@"Herndon High School"];
+    [place setPollingPlaceState:@"VA"];
+    [place setPollingPlaceZipCode:@"20170"];
+    [place setPrecinctName:@"327-Sugerland"];
+    [place setPrecinctNumber:@"327"];
+     
+    voter = (Voter *)[NSEntityDescription insertNewObjectForEntityForName:@"Voter" inManagedObjectContext:[self managedObjectContext]];
+    
+    [voter setActiveRegistration:@"YES"];
+    [voter setCity:@"Herndon"];
+    [voter setElectoralDistrict:@"Dranesville"];
+    [voter setEmailAddress:@"anne@email.com"];
+    [voter setFamilyName:@"O'Flaherty"];
+    [voter setGivenName:@"Anne"];
+    [voter setHasVoted:@"NO"];
+    [voter setLocalityName:@"Sugerland"];
+    [voter setMiddleName:@"Weston"];
+    [voter setPersonFullName:@"Anne Weston O'Flaherty"];
+    [voter setPrecinctName:@"327-Sugarland"];
+    [voter setPrecinctNumber:@"327"];
+    [voter setPrecinctSplitId:@"327"];
+    [voter setPreferredLanguage:@"English"];
+    [voter setSignatureBlock:@"signature"];
+    [voter setState:@"VA"];
+    [voter setStreetAddress:@"1314 Cassia St"];
+    [voter setVoterIdentificationID:@"917796105"];
+    [voter setZipCode:@"20170"];
+    
+	// Commit the change.
+	if (![[self managedObjectContext] save:&error]) {
+		// Handle the error.
+	}
+}
 
 #pragma mark -
 #pragma mark Application's Documents directory
