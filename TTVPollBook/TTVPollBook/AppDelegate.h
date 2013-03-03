@@ -17,5 +17,6 @@
 @property (strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
 -(void)seedSampleDBRecord;
++(AppDelegate *)instance;
 
 @end

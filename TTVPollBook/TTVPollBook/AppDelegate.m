@@ -30,7 +30,7 @@
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     
-    [self seedSampleDBRecord];
+    //[self seedSampleDBRecord];   //just used once to create db template
     
     return YES;
 }
@@ -60,6 +60,10 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
++(AppDelegate *)instance {
+	return (AppDelegate*) [[UIApplication sharedApplication] delegate];
 }
 
 #pragma mark -
@@ -96,7 +100,7 @@
     }
 	
 	_persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-	NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"coredatat1.sqlite"]];
+	NSURL *storeUrl = [NSURL fileURLWithPath: [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"coredataV1.sqlite"]];
 	
 	NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
                              [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
@@ -153,9 +157,7 @@
     [voter setZipCode:@"20170"];
     
 	// Commit the change.
-	if (![[self managedObjectContext] save:&error]) {
-		// Handle the error.
-	}
+	if (![[self managedObjectContext] save:&error]) {}
 }
 
 #pragma mark -
