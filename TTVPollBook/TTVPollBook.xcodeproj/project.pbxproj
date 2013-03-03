@@ -26,6 +26,8 @@
 		784A22C616E28F8F0066868D /* PollDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784A22C416E28F8F0066868D /* PollDetailViewController.xib */; };
 		784A22CA16E291E90066868D /* ScanIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 784A22C816E291E90066868D /* ScanIDViewController.m */; };
 		784A22CB16E291E90066868D /* ScanIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 784A22C916E291E90066868D /* ScanIDViewController.xib */; };
+		784A22CD16E3023A0066868D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A22CC16E3023A0066868D /* CoreData.framework */; };
+		784A22D016E302960066868D /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 784A22CE16E302960066868D /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +59,8 @@
 		784A22C716E291E90066868D /* ScanIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanIDViewController.h; sourceTree = "<group>"; };
 		784A22C816E291E90066868D /* ScanIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanIDViewController.m; sourceTree = "<group>"; };
 		784A22C916E291E90066868D /* ScanIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanIDViewController.xib; sourceTree = "<group>"; };
+		784A22CC16E3023A0066868D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		784A22CF16E302960066868D /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784A22CD16E3023A0066868D /* CoreData.framework in Frameworks */,
 				784A229116E270370066868D /* UIKit.framework in Frameworks */,
 				784A229316E270370066868D /* Foundation.framework in Frameworks */,
 				784A229516E270370066868D /* CoreGraphics.framework in Frameworks */,
@@ -93,6 +98,7 @@
 		784A228F16E270370066868D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				784A22CC16E3023A0066868D /* CoreData.framework */,
 				784A229016E270370066868D /* UIKit.framework */,
 				784A229216E270370066868D /* Foundation.framework */,
 				784A229416E270370066868D /* CoreGraphics.framework */,
@@ -120,6 +126,7 @@
 				784A22BD16E28F6F0066868D /* VoterDetailViewController.h */,
 				784A22BE16E28F6F0066868D /* VoterDetailViewController.m */,
 				784A22BF16E28F6F0066868D /* VoterDetailViewController.xib */,
+				784A22D116E302D30066868D /* Data Model */,
 				784A229716E270370066868D /* Supporting Files */,
 			);
 			path = TTVPollBook;
@@ -137,6 +144,15 @@
 				784A22A616E270370066868D /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		784A22D116E302D30066868D /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				784A22CE16E302960066868D /* Model.xcdatamodeld */,
+			);
+			name = "Data Model";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +232,7 @@
 				784A22C016E28F6F0066868D /* VoterDetailViewController.m in Sources */,
 				784A22C516E28F8F0066868D /* PollDetailViewController.m in Sources */,
 				784A22CA16E291E90066868D /* ScanIDViewController.m in Sources */,
+				784A22D016E302960066868D /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +349,20 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		784A22CE16E302960066868D /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				784A22CF16E302960066868D /* Model.xcdatamodel */,
+			);
+			currentVersion = 784A22CF16E302960066868D /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = TTVPollBook/Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 784A228516E270370066868D /* Project object */;
 }
