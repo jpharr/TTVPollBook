@@ -28,8 +28,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [[self signatureBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
+    //    [_printBallotBtn setBackgroundImage:[[UIImage imageNamed:@"button_grey_pressed.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:10] forState:UIControlStateHighlighted];
+    
+    [[self printBallotBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
+//    [_printBallotBtn setBackgroundImage:[[UIImage imageNamed:@"button_grey_pressed.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:10] forState:UIControlStateHighlighted];
+    
+    [[self showPollingLctnBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
+//    [_showPollingLctnBtn setBackgroundImage:[[UIImage imageNamed:@"button_grey_pressed.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:10] forState:UIControlStateHighlighted];
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

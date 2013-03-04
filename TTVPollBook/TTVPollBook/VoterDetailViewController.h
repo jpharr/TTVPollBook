@@ -10,4 +10,8 @@
 
 @interface VoterDetailViewController : UIViewController
 
+@property (nonatomic, strong) IBOutlet UIButton *signatureBtn;
+@property (nonatomic, strong) IBOutlet UIButton *printBallotBtn;
+@property (nonatomic, strong) IBOutlet UIButton *showPollingLctnBtn;
+
 @end
