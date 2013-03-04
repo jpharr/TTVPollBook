@@ -121,8 +121,7 @@
         voter = [self.listContent objectAtIndex:indexPath.row];
     }
 	
-	cell.textLabel.text = voter.familyName;
-
+	cell.textLabel.text = [NSString stringWithFormat:@"%@, %@ \t\t %@,%@,%@ %@\t\t%@", voter.familyName,voter.givenName, voter.streetAddress, voter.city, voter.state,voter.zipCode,voter.precinctName];
 	return cell;
 }
 
