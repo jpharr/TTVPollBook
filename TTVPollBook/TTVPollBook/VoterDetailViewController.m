@@ -29,15 +29,26 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    //set up button images
     [[self signatureBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
-    //    [_printBallotBtn setBackgroundImage:[[UIImage imageNamed:@"button_grey_pressed.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:10] forState:UIControlStateHighlighted];
     
     [[self printBallotBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
-//    [_printBallotBtn setBackgroundImage:[[UIImage imageNamed:@"button_grey_pressed.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:10] forState:UIControlStateHighlighted];
     
     [[self showPollingLctnBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
-//    [_showPollingLctnBtn setBackgroundImage:[[UIImage imageNamed:@"button_grey_pressed.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:10] forState:UIControlStateHighlighted];
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+   
+    //set up name block
+    [_row1Text setText:[NSString stringWithFormat:@"%@ %@",[[self voter] givenName],[[self voter] familyName]]];
+    [_row2Text setText:[[self voter] streetAddress]];
+    [_row3Text setText:[NSString stringWithFormat:@"%@, %@ %@",[[self voter] city],[[self voter] state],[[self voter] zipCode]]];
+    
+    //set up voted status
+    [_votedStatusMessage setText:[[[self voter]hasVoted] isEqualToString:@"Yes"]?@"Has voted":@"Has not yet voted"];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
