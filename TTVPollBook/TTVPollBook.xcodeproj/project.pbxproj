@@ -13,6 +13,7 @@
 		7825934816E3AE1D00FB2A80 /* signature.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825934216E3AE1D00FB2A80 /* signature.png */; };
 		7825934916E3AE1D00FB2A80 /* button_grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825934316E3AE1D00FB2A80 /* button_grey@2x.png */; };
 		7825934A16E3AE1D00FB2A80 /* button_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825934416E3AE1D00FB2A80 /* button_grey.png */; };
+		7828DDD316E6ECB500B1A42B /* coredataV1.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 7828DDD216E6ECB500B1A42B /* coredataV1.sqlite */; };
 		784A229116E270370066868D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A229016E270370066868D /* UIKit.framework */; };
 		784A229316E270370066868D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A229216E270370066868D /* Foundation.framework */; };
 		784A229516E270370066868D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A229416E270370066868D /* CoreGraphics.framework */; };
@@ -46,6 +47,7 @@
 		7825934216E3AE1D00FB2A80 /* signature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signature.png; sourceTree = "<group>"; };
 		7825934316E3AE1D00FB2A80 /* button_grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "button_grey@2x.png"; sourceTree = "<group>"; };
 		7825934416E3AE1D00FB2A80 /* button_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_grey.png; sourceTree = "<group>"; };
+		7828DDD216E6ECB500B1A42B /* coredataV1.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = coredataV1.sqlite; sourceTree = "<group>"; };
 		784A228D16E270370066868D /* TTVPollBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTVPollBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		784A229016E270370066868D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		784A229216E270370066868D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -169,6 +171,7 @@
 		784A229716E270370066868D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7828DDD216E6ECB500B1A42B /* coredataV1.sqlite */,
 				784A22D816E3EC3F0066868D /* Icon@2x.png */,
 				784A22D916E3EC3F0066868D /* Icon.png */,
 				784A229816E270370066868D /* TTVPollBook-Info.plist */,
@@ -261,6 +264,7 @@
 				7825934A16E3AE1D00FB2A80 /* button_grey.png in Resources */,
 				784A22DA16E3EC3F0066868D /* Icon@2x.png in Resources */,
 				784A22DB16E3EC3F0066868D /* Icon.png in Resources */,
+				7828DDD316E6ECB500B1A42B /* coredataV1.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
