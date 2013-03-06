@@ -27,6 +27,11 @@
     
     StartViewController *masterViewController = [[StartViewController alloc] initWithNibName:@"StartViewController" bundle:nil];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+//    UILabel *newTitleLabel = [[UILabel alloc] init];
+//    [newTitleLabel setText:@"Your election information here..."];
+//    [newTitleLabel sizeToFit];
+//    [self.navigationController.navigationBar.topItem setTitleView:newTitleLabel];
+//    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:82/255 green:104/255 blue:164/255 alpha:1.0];
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     
