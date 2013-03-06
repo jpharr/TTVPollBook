@@ -47,8 +47,14 @@
 -(void)pullFullVoterList{
 	NSFetchRequest *request = [[NSFetchRequest alloc] init];
 	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Voter" inManagedObjectContext:[[AppDelegate instance]managedObjectContext]];
-	[request setEntity:entity];
     
+    NSSortDescriptor *familyNameDescriptor = [[NSSortDescriptor alloc] initWithKey:@"familyName" ascending:YES];
+    NSSortDescriptor *givenNameDescriptor = [[NSSortDescriptor alloc] initWithKey:@"givenName" ascending:YES];
+    NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:familyNameDescriptor,givenNameDescriptor, nil];
+    [request setSortDescriptors:sortDescriptors];
+
+    [request setEntity:entity];
+
 	// Execute the fetch -- create a mutable copy of the result.
 	NSError *error = nil;
 	NSMutableArray *mutableFetchResults = [[[[AppDelegate instance]managedObjectContext] executeFetchRequest:request error:&error] mutableCopy];
@@ -66,12 +72,9 @@
     [self.navigationController pushViewController:scanView animated:YES];
 }
 
--(IBAction)rowSelectButtonAction:(id)sender{
-    [self doRowSelectTasks];
-}
-
--(void)doRowSelectTasks{
+-(void)doRowSelectTasksForVoter:(Voter *)selectedVoter{
     VoterDetailViewController *voterView = [[VoterDetailViewController alloc] init];
+    [voterView setVoter:selectedVoter];
     [self.navigationController pushViewController:voterView animated:YES];
 }
 
@@ -104,6 +107,20 @@
 	{
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellID] autorelease];
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, 300.0, 44.0)];
+        [nameLabel setBackgroundColor:[UIColor clearColor]];
+        [nameLabel setOpaque:NO];
+        [nameLabel setTag:1];
+        UILabel *addressLabel = [[UILabel alloc] initWithFrame:CGRectMake(300.0, 0.0, 724.0, 44.0)];
+        [addressLabel setBackgroundColor:[UIColor clearColor]];
+        [addressLabel setTag:2];
+        [addressLabel setOpaque:NO];
+        
+        UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"grey_row"]];
+        [[cell contentView] addSubview:backgroundImage];
+        [[cell contentView] addSubview:nameLabel];
+        [[cell contentView] addSubview:addressLabel];
+        
 	}
 	
 	/*
@@ -121,7 +138,12 @@
         voter = [self.listContent objectAtIndex:indexPath.row];
     }
 	
-	cell.textLabel.text = [NSString stringWithFormat:@"%@, %@ \t\t %@,%@,%@ %@\t\t%@", voter.familyName,voter.givenName, voter.streetAddress, voter.city, voter.state,voter.zipCode,voter.precinctName];
+	UILabel *label1 = (UILabel *)[cell.contentView viewWithTag:1];
+    label1.text = [NSString stringWithFormat:@"%@, %@", voter.familyName,voter.givenName];
+    
+	UILabel *label2 = (UILabel *)[cell.contentView viewWithTag:2];
+    label2.text = [NSString stringWithFormat:@"%@,%@,%@ %@ %@", voter.streetAddress, voter.city, voter.state,voter.zipCode,voter.precinctName];
+    
 	return cell;
 }
 
@@ -132,13 +154,18 @@
 	/*
 	 If the requesting table view is the search display controller's table view, configure the next view controller using the filtered content, otherwise use the main list.
 	 */
+    
+    Voter *voter = nil;
+
 	if (tableView == self.searchDisplayController.searchResultsTableView)
 	{
+        voter = [self.filteredListContent objectAtIndex:indexPath.row];
     }
 	else
 	{
+        voter = [self.listContent objectAtIndex:indexPath.row];
     }
-    
+    [self doRowSelectTasksForVoter:voter];
 }
 
 
