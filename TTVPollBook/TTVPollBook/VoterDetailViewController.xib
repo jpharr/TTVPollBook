@@ -92,7 +92,11 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{50, 442}, {499, 128}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
+<<<<<<< HEAD
 						<reference key="NSNextKeyView" ref="628745748"/>
+=======
+						<reference key="NSNextKeyView" ref="760588229"/>
+>>>>>>> 4526dee676355db503be2b8d6c7930f8b69fe1cd
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -350,6 +354,34 @@
 						<reference key="IBUIFontDescription" ref="693786291"/>
 						<reference key="IBUIFont" ref="364883751"/>
 					</object>
+<<<<<<< HEAD
+=======
+					<object class="IBUIButton" id="760588229">
+						<reference key="NSNextResponder" ref="766721923"/>
+						<int key="NSvFlags">292</int>
+						<string key="NSFrame">{{352, 578}, {197, 29}}</string>
+						<reference key="NSSuperview" ref="766721923"/>
+						<string key="NSReuseIdentifierKey">_NS:9</string>
+						<string key="NSAntiCompressionPriority">{750, 1000}</string>
+						<bool key="IBUIOpaque">NO</bool>
+						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<int key="IBUIContentHorizontalAlignment">0</int>
+						<int key="IBUIContentVerticalAlignment">0</int>
+						<int key="IBUIButtonType">1</int>
+						<string key="IBUINormalTitle">Signature Complete</string>
+						<reference key="IBUIHighlightedTitleColor" ref="136125063"/>
+						<reference key="IBUINormalTitleShadowColor" ref="820947781"/>
+						<object class="IBUIFontDescription" key="IBUIFontDescription">
+							<int key="type">2</int>
+							<double key="pointSize">8</double>
+						</object>
+						<object class="NSFont" key="IBUIFont">
+							<string key="NSName">Helvetica-Bold</string>
+							<double key="NSSize">8</double>
+							<int key="NSfFlags">16</int>
+						</object>
+					</object>
+>>>>>>> 4526dee676355db503be2b8d6c7930f8b69fe1cd
 					<object class="IBUILabel" id="729221630">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">292</int>
