@@ -36,6 +36,9 @@
     
 	// create a filtered list that will contain voters for the search results table.
 	self.filteredListContent = [NSMutableArray arrayWithCapacity:[self.listContent count]];
+    
+    [[self showPollingLctnBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
+    
 }
 
 - (void)didReceiveMemoryWarning
