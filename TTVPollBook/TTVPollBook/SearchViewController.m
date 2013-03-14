@@ -32,6 +32,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    [[self scanButton] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:5] forState:UIControlStateNormal];
+    
     [self pullFullVoterList];
     
 	// create a filtered list that will contain voters for the search results table.
@@ -154,7 +157,7 @@
     label1.text = [NSString stringWithFormat:@"%@, %@", voter.familyName,voter.givenName];
     
 	UILabel *label2 = (UILabel *)[cell.contentView viewWithTag:2];
-    label2.text = [NSString stringWithFormat:@"%@,%@,%@ %@", voter.streetAddress, voter.city, voter.state,voter.zipCode];
+    label2.text = [NSString stringWithFormat:@"%@, %@, %@ %@", voter.streetAddress, voter.city, voter.state,voter.zipCode];
     
 	return cell;
 }

@@ -17,6 +17,7 @@
 @property (strong) IBOutlet UIView *authenticationView;
 @property (strong) IBOutlet UITextField *precinctID;
 @property (strong) IBOutlet UITextField *authenticationCode;
+@property (strong) IBOutlet UIButton *loginButton;
 
 -(IBAction)startSession:(id)sender;
 
