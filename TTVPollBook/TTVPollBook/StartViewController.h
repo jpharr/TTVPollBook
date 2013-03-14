@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface StartViewController : UIViewController
+@interface StartViewController : UIViewController{
+    BOOL authenticated;
+}
 
 @property (strong) IBOutlet UIButton *checkinButton;
 @property (strong) IBOutlet UIButton *adminButton;
+@property (strong) IBOutlet UIView *authenticationView;
+@property (strong) IBOutlet UITextField *precinctID;
+@property (strong) IBOutlet UITextField *authenticationCode;
+
+-(IBAction)startSession:(id)sender;
 
 @end

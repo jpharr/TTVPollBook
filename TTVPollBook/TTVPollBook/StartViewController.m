@@ -15,6 +15,10 @@
 
 @implementation StartViewController
 
+- (BOOL)disablesAutomaticKeyboardDismissal {
+    return NO;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,10 +33,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-        [[self checkinButton] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:5] forState:UIControlStateNormal];
+    [[self checkinButton] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:5] forState:UIControlStateNormal];
+
+    [[self adminButton] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:5] forState:UIControlStateNormal];
     
-        [[self adminButton] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:5] forState:UIControlStateNormal];
-    
+    [[self checkinButton] setHidden:YES];
+    authenticated = NO;
+    [[self authenticationView] setHidden:NO];
     
     
 }
@@ -46,6 +53,14 @@
 -(IBAction)checkinAction:(id)sender{
     SearchViewController *searchView = [[SearchViewController alloc] init];
     [self.navigationController pushViewController:searchView animated:YES];    
+}
+
+-(IBAction)startSession:(id)sender{
+    [[self precinctID] endEditing:YES];
+    [[self authenticationCode] endEditing:YES];
+    
+    [[self authenticationView] setHidden:YES];
+    [[self checkinButton] setHidden:NO];
 }
 
 @end
