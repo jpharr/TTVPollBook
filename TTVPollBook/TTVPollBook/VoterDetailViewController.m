@@ -49,6 +49,19 @@
     [_votedStatusMessage setText:[[[self voter]hasVoted] isEqualToString:@"Yes"]?@"Has voted":@"Has not yet voted"];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    UILabel *newTitleLabel = [[UILabel alloc] init];
+    [newTitleLabel setText:@"November 2012 General Election - 327 Sugarland Precinct"];
+    [newTitleLabel setTextColor:[UIColor blackColor]];
+    [newTitleLabel setBackgroundColor:[UIColor clearColor]];
+    [newTitleLabel setOpaque:NO];
+    [newTitleLabel sizeToFit];
+    [self.navigationController.navigationBar.topItem setTitleView:newTitleLabel];
+    
+}
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

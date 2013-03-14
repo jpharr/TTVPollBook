@@ -38,6 +38,18 @@
 	self.filteredListContent = [NSMutableArray arrayWithCapacity:[self.listContent count]];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    UILabel *newTitleLabel = [[UILabel alloc] init];
+    [newTitleLabel setText:@"November 2012 General Election - 327 Sugarland Precinct"];
+    [newTitleLabel setTextColor:[UIColor blackColor]];
+    [newTitleLabel setBackgroundColor:[UIColor clearColor]];
+    [newTitleLabel setOpaque:NO];
+    [newTitleLabel sizeToFit];
+    [self.navigationController.navigationBar.topItem setTitleView:newTitleLabel];
+
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -107,7 +119,7 @@
 	{
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellID] autorelease];
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, 300.0, 44.0)];
+        UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(30.0, 0.0, 270.0, 44.0)];
         [nameLabel setBackgroundColor:[UIColor clearColor]];
         [nameLabel setOpaque:NO];
         [nameLabel setTag:1];
@@ -142,7 +154,7 @@
     label1.text = [NSString stringWithFormat:@"%@, %@", voter.familyName,voter.givenName];
     
 	UILabel *label2 = (UILabel *)[cell.contentView viewWithTag:2];
-    label2.text = [NSString stringWithFormat:@"%@,%@,%@ %@ %@", voter.streetAddress, voter.city, voter.state,voter.zipCode,voter.precinctName];
+    label2.text = [NSString stringWithFormat:@"%@,%@,%@ %@", voter.streetAddress, voter.city, voter.state,voter.zipCode];
     
 	return cell;
 }

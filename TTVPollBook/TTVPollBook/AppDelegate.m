@@ -27,11 +27,13 @@
     
     StartViewController *masterViewController = [[StartViewController alloc] initWithNibName:@"StartViewController" bundle:nil];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
-//    UILabel *newTitleLabel = [[UILabel alloc] init];
-//    [newTitleLabel setText:@"Your election information here..."];
-//    [newTitleLabel sizeToFit];
-//    [self.navigationController.navigationBar.topItem setTitleView:newTitleLabel];
-//    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:82/255 green:104/255 blue:164/255 alpha:1.0];
+    UILabel *newTitleLabel = [[UILabel alloc] init];
+    [newTitleLabel setText:@"November 2012 General Election - 327 Sugarland Precinct"];
+    [newTitleLabel setTextColor:[UIColor blackColor]];
+    [newTitleLabel setBackgroundColor:[UIColor clearColor]];
+    [newTitleLabel setOpaque:NO];
+    [newTitleLabel sizeToFit];
+    [self.navigationController.navigationBar.topItem setTitleView:newTitleLabel];
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     
