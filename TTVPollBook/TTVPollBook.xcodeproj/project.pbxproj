@@ -7,18 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7815E84516F26357001E8B1E /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7815E83516F26357001E8B1E /* beep.wav */; };
-		7815E84616F26357001E8B1E /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7815E83616F26357001E8B1E /* CHANGELOG.txt */; };
-		7815E84716F26357001E8B1E /* scanditsdk.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7815E83716F26357001E8B1E /* scanditsdk.strings */; };
-		7815E84816F26357001E8B1E /* empty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7815E83916F26357001E8B1E /* empty.cpp */; };
-		7815E84916F26357001E8B1E /* flashlight-turn-off-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7815E83B16F26357001E8B1E /* flashlight-turn-off-icon.png */; };
-		7815E84A16F26357001E8B1E /* flashlight-turn-off-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7815E83C16F26357001E8B1E /* flashlight-turn-off-icon@2x.png */; };
-		7815E84B16F26357001E8B1E /* flashlight-turn-on-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7815E83D16F26357001E8B1E /* flashlight-turn-on-icon.png */; };
-		7815E84C16F26357001E8B1E /* flashlight-turn-on-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7815E83E16F26357001E8B1E /* flashlight-turn-on-icon@2x.png */; };
-		7815E84D16F26357001E8B1E /* libscanditsdk-iphone-2.3.0M1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7815E83F16F26357001E8B1E /* libscanditsdk-iphone-2.3.0M1.a */; };
-		7815E84E16F26357001E8B1E /* LICENSE-2.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7815E84016F26357001E8B1E /* LICENSE-2.0.txt */; };
-		7815E84F16F26357001E8B1E /* poweredby.png in Resources */ = {isa = PBXBuildFile; fileRef = 7815E84116F26357001E8B1E /* poweredby.png */; };
-		7815E85016F26357001E8B1E /* poweredby@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7815E84216F26357001E8B1E /* poweredby@2x.png */; };
+		7815E85216F26BAA001E8B1E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7815E85116F26BAA001E8B1E /* CoreVideo.framework */; };
+		7815E85416F26BBD001E8B1E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7815E85316F26BBD001E8B1E /* AudioToolbox.framework */; };
+		7815E85616F26BC6001E8B1E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7815E85516F26BC6001E8B1E /* AVFoundation.framework */; };
+		7815E85816F26BCE001E8B1E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7815E85716F26BCE001E8B1E /* CoreMedia.framework */; };
+		7815E85A16F26BDC001E8B1E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7815E85916F26BDC001E8B1E /* QuartzCore.framework */; };
+		7815E85C16F26BE7001E8B1E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7815E85B16F26BE6001E8B1E /* SystemConfiguration.framework */; };
 		7825934516E3AE1D00FB2A80 /* name_block@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825933F16E3AE1D00FB2A80 /* name_block@2x.png */; };
 		7825934616E3AE1D00FB2A80 /* name_block.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825934016E3AE1D00FB2A80 /* name_block.png */; };
 		7825934716E3AE1D00FB2A80 /* signature@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825934116E3AE1D00FB2A80 /* signature@2x.png */; };
@@ -56,21 +50,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7815E83516F26357001E8B1E /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
-		7815E83616F26357001E8B1E /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
-		7815E83816F26357001E8B1E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/scanditsdk.strings; sourceTree = "<group>"; };
-		7815E83916F26357001E8B1E /* empty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = empty.cpp; sourceTree = "<group>"; };
-		7815E83A16F26357001E8B1E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/scanditsdk.strings; sourceTree = "<group>"; };
-		7815E83B16F26357001E8B1E /* flashlight-turn-off-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-off-icon.png"; sourceTree = "<group>"; };
-		7815E83C16F26357001E8B1E /* flashlight-turn-off-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-off-icon@2x.png"; sourceTree = "<group>"; };
-		7815E83D16F26357001E8B1E /* flashlight-turn-on-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-on-icon.png"; sourceTree = "<group>"; };
-		7815E83E16F26357001E8B1E /* flashlight-turn-on-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-on-icon@2x.png"; sourceTree = "<group>"; };
-		7815E83F16F26357001E8B1E /* libscanditsdk-iphone-2.3.0M1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libscanditsdk-iphone-2.3.0M1.a"; path = "TTVPollBook/ScanditSDK/libscanditsdk-iphone-2.3.0M1.a"; sourceTree = "<group>"; };
-		7815E84016F26357001E8B1E /* LICENSE-2.0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LICENSE-2.0.txt"; sourceTree = "<group>"; };
-		7815E84116F26357001E8B1E /* poweredby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poweredby.png; sourceTree = "<group>"; };
-		7815E84216F26357001E8B1E /* poweredby@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poweredby@2x.png"; sourceTree = "<group>"; };
-		7815E84316F26357001E8B1E /* ScanditSDKBarcodePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanditSDKBarcodePicker.h; sourceTree = "<group>"; };
-		7815E84416F26357001E8B1E /* ScanditSDKOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanditSDKOverlayController.h; sourceTree = "<group>"; };
+		7815E85116F26BAA001E8B1E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		7815E85316F26BBD001E8B1E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7815E85516F26BC6001E8B1E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7815E85716F26BCE001E8B1E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7815E85916F26BDC001E8B1E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7815E85B16F26BE6001E8B1E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7825933F16E3AE1D00FB2A80 /* name_block@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "name_block@2x.png"; sourceTree = "<group>"; };
 		7825934016E3AE1D00FB2A80 /* name_block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = name_block.png; sourceTree = "<group>"; };
 		7825934116E3AE1D00FB2A80 /* signature@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signature@2x.png"; sourceTree = "<group>"; };
@@ -123,37 +108,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7815E85C16F26BE7001E8B1E /* SystemConfiguration.framework in Frameworks */,
+				7815E85A16F26BDC001E8B1E /* QuartzCore.framework in Frameworks */,
+				7815E85816F26BCE001E8B1E /* CoreMedia.framework in Frameworks */,
+				7815E85616F26BC6001E8B1E /* AVFoundation.framework in Frameworks */,
+				7815E85416F26BBD001E8B1E /* AudioToolbox.framework in Frameworks */,
+				7815E85216F26BAA001E8B1E /* CoreVideo.framework in Frameworks */,
 				784A22CD16E3023A0066868D /* CoreData.framework in Frameworks */,
 				784A229116E270370066868D /* UIKit.framework in Frameworks */,
 				784A229316E270370066868D /* Foundation.framework in Frameworks */,
 				784A229516E270370066868D /* CoreGraphics.framework in Frameworks */,
-				7815E84D16F26357001E8B1E /* libscanditsdk-iphone-2.3.0M1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7815E83416F26357001E8B1E /* ScanditSDK */ = {
-			isa = PBXGroup;
-			children = (
-				7815E83516F26357001E8B1E /* beep.wav */,
-				7815E83616F26357001E8B1E /* CHANGELOG.txt */,
-				7815E83716F26357001E8B1E /* scanditsdk.strings */,
-				7815E83916F26357001E8B1E /* empty.cpp */,
-				7815E83B16F26357001E8B1E /* flashlight-turn-off-icon.png */,
-				7815E83C16F26357001E8B1E /* flashlight-turn-off-icon@2x.png */,
-				7815E83D16F26357001E8B1E /* flashlight-turn-on-icon.png */,
-				7815E83E16F26357001E8B1E /* flashlight-turn-on-icon@2x.png */,
-				7815E84016F26357001E8B1E /* LICENSE-2.0.txt */,
-				7815E84116F26357001E8B1E /* poweredby.png */,
-				7815E84216F26357001E8B1E /* poweredby@2x.png */,
-				7815E84316F26357001E8B1E /* ScanditSDKBarcodePicker.h */,
-				7815E84416F26357001E8B1E /* ScanditSDKOverlayController.h */,
-			);
-			path = ScanditSDK;
-			sourceTree = "<group>";
-		};
 		7825933E16E3AE0200FB2A80 /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,7 +165,12 @@
 		784A228F16E270370066868D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7815E83F16F26357001E8B1E /* libscanditsdk-iphone-2.3.0M1.a */,
+				7815E85B16F26BE6001E8B1E /* SystemConfiguration.framework */,
+				7815E85916F26BDC001E8B1E /* QuartzCore.framework */,
+				7815E85716F26BCE001E8B1E /* CoreMedia.framework */,
+				7815E85516F26BC6001E8B1E /* AVFoundation.framework */,
+				7815E85316F26BBD001E8B1E /* AudioToolbox.framework */,
+				7815E85116F26BAA001E8B1E /* CoreVideo.framework */,
 				784A22CC16E3023A0066868D /* CoreData.framework */,
 				784A229016E270370066868D /* UIKit.framework */,
 				784A229216E270370066868D /* Foundation.framework */,
@@ -234,7 +209,6 @@
 		784A229716E270370066868D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				7815E83416F26357001E8B1E /* ScanditSDK */,
 				7828DDD916E8090D00B1A42B /* map images */,
 				7828DDD516E7F93E00B1A42B /* grey_row.png */,
 				7828DDD616E7F93E00B1A42B /* grey_row@2x.png */,
@@ -336,16 +310,6 @@
 				7828DDD716E7F93E00B1A42B /* grey_row.png in Resources */,
 				7828DDD816E7F93E00B1A42B /* grey_row@2x.png in Resources */,
 				7828DDDB16E8091A00B1A42B /* Map_324.png in Resources */,
-				7815E84516F26357001E8B1E /* beep.wav in Resources */,
-				7815E84616F26357001E8B1E /* CHANGELOG.txt in Resources */,
-				7815E84716F26357001E8B1E /* scanditsdk.strings in Resources */,
-				7815E84916F26357001E8B1E /* flashlight-turn-off-icon.png in Resources */,
-				7815E84A16F26357001E8B1E /* flashlight-turn-off-icon@2x.png in Resources */,
-				7815E84B16F26357001E8B1E /* flashlight-turn-on-icon.png in Resources */,
-				7815E84C16F26357001E8B1E /* flashlight-turn-on-icon@2x.png in Resources */,
-				7815E84E16F26357001E8B1E /* LICENSE-2.0.txt in Resources */,
-				7815E84F16F26357001E8B1E /* poweredby.png in Resources */,
-				7815E85016F26357001E8B1E /* poweredby@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,22 +330,12 @@
 				784A22D016E302960066868D /* Model.xcdatamodeld in Sources */,
 				784A22D416E3AA3A0066868D /* Voter.m in Sources */,
 				784A22D716E3AA650066868D /* PollingPlace.m in Sources */,
-				7815E84816F26357001E8B1E /* empty.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7815E83716F26357001E8B1E /* scanditsdk.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7815E83816F26357001E8B1E /* de */,
-				7815E83A16F26357001E8B1E /* en */,
-			);
-			name = scanditsdk.strings;
-			sourceTree = "<group>";
-		};
 		784A229916E270370066868D /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -452,6 +406,8 @@
 		784A22B116E270370066868D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jeff Pharr (7F4BV9Z28V)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jeff Pharr (7F4BV9Z28V)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TTVPollBook/TTVPollBook-Prefix.pch";
 				INFOPLIST_FILE = "TTVPollBook/TTVPollBook-Info.plist";
@@ -461,6 +417,8 @@
 					"\"$(SRCROOT)/TTVPollBook/ScanditSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2A2F75AA-42C2-455E-9E05-476529C638E6";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2A2F75AA-42C2-455E-9E05-476529C638E6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -468,6 +426,7 @@
 		784A22B216E270370066868D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jeff Pharr (7F4BV9Z28V)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TTVPollBook/TTVPollBook-Prefix.pch";
 				INFOPLIST_FILE = "TTVPollBook/TTVPollBook-Info.plist";
@@ -477,6 +436,7 @@
 					"\"$(SRCROOT)/TTVPollBook/ScanditSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2A2F75AA-42C2-455E-9E05-476529C638E6";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
