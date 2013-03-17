@@ -33,7 +33,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [[self scanButton] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:5] forState:UIControlStateNormal];
+    //[[self scanButton] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:5 topCapHeight:5] forState:UIControlStateNormal];
     
     [self pullFullVoterList];
     
@@ -50,6 +50,11 @@
     [newTitleLabel setOpaque:NO];
     [newTitleLabel sizeToFit];
     [self.navigationController.navigationBar.topItem setTitleView:newTitleLabel];
+    
+    UIBarButtonItem *rightButton = [[UIBarButtonItem alloc] initWithTitle:@"Scan ID"
+                                                                    style:UIBarButtonItemStyleDone target:self action:@selector(scanIDAction:)];
+    self.navigationItem.rightBarButtonItem = rightButton;
+
 
 }
 
@@ -122,16 +127,20 @@
 	{
 		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kCellID] autorelease];
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
         UILabel *nameLabel = [[UILabel alloc] initWithFrame:CGRectMake(30.0, 0.0, 270.0, 44.0)];
         [nameLabel setBackgroundColor:[UIColor clearColor]];
         [nameLabel setOpaque:NO];
         [nameLabel setTag:1];
+        
         UILabel *addressLabel = [[UILabel alloc] initWithFrame:CGRectMake(300.0, 0.0, 724.0, 44.0)];
         [addressLabel setBackgroundColor:[UIColor clearColor]];
         [addressLabel setTag:2];
         [addressLabel setOpaque:NO];
         
         UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"grey_row"]];
+        [backgroundImage setTag:3];
+        
         [[cell contentView] addSubview:backgroundImage];
         [[cell contentView] addSubview:nameLabel];
         [[cell contentView] addSubview:addressLabel];
@@ -162,6 +171,13 @@
 	return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didHighlightRowAtIndexPath:(NSIndexPath *)indexPath{
+    [(UIImageView *)[[[tableView cellForRowAtIndexPath:indexPath] contentView] viewWithTag:3] setImage:[UIImage imageNamed:@"blue_row"]];
+}
+
+- (void)tableView:(UITableView *)tableView didUnhighlightRowAtIndexPath:(NSIndexPath *)indexPath{
+    [(UIImageView *)[[[tableView cellForRowAtIndexPath:indexPath] contentView] viewWithTag:3] setImage:[UIImage imageNamed:@"grey_row"]];
+}
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

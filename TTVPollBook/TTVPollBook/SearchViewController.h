@@ -13,7 +13,6 @@
 @property (nonatomic, strong) NSArray *listContent;
 @property (nonatomic, strong) NSMutableArray *filteredListContent;
 @property (nonatomic, strong) IBOutlet UITableView *listTable;
-@property (strong) IBOutlet UIButton *scanButton;
 
 
 @end

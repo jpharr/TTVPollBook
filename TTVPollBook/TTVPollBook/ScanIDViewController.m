@@ -14,6 +14,7 @@
 @interface ScanIDViewController ()
 
 @property (nonatomic, strong) ZXCapture *capture;
+@property (nonatomic, strong) IBOutlet UIImageView *overlayImage;
 
 @end
 
@@ -61,6 +62,8 @@
     CATransform3D transform = CATransform3DMakeRotation(1.57079633, 0, 0, 1.0);
     self.capture.layer.transform = transform;
     self.capture.layer.frame = self.view.bounds;
+    [self.view bringSubviewToFront:self.overlayImage];
+
 }
 
 - (void)didReceiveMemoryWarning

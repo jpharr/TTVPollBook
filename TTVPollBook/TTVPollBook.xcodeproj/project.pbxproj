@@ -197,6 +197,10 @@
 		7815EAA916F63202001E8B1E /* ZXResultPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7815E9EF16F63201001E8B1E /* ZXResultPoint.m */; };
 		7815EAAA16F63202001E8B1E /* ZXRGBLuminanceSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7815E9F216F63201001E8B1E /* ZXRGBLuminanceSource.m */; };
 		7815EAAC16F63256001E8B1E /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7815EAAB16F63256001E8B1E /* ImageIO.framework */; };
+		7815EAB016F65312001E8B1E /* blue_row.png in Resources */ = {isa = PBXBuildFile; fileRef = 7815EAAE16F65312001E8B1E /* blue_row.png */; };
+		7815EAB116F65312001E8B1E /* blue_row@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7815EAAF16F65312001E8B1E /* blue_row@2x.png */; };
+		7815EAB416F65444001E8B1E /* scan_window.png in Resources */ = {isa = PBXBuildFile; fileRef = 7815EAB216F65443001E8B1E /* scan_window.png */; };
+		7815EAB516F65444001E8B1E /* scan_window@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7815EAB316F65443001E8B1E /* scan_window@2x.png */; };
 		7825934516E3AE1D00FB2A80 /* name_block@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825933F16E3AE1D00FB2A80 /* name_block@2x.png */; };
 		7825934616E3AE1D00FB2A80 /* name_block.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825934016E3AE1D00FB2A80 /* name_block.png */; };
 		7825934716E3AE1D00FB2A80 /* signature@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7825934116E3AE1D00FB2A80 /* signature@2x.png */; };
@@ -618,6 +622,10 @@
 		7815E9F216F63201001E8B1E /* ZXRGBLuminanceSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXRGBLuminanceSource.m; sourceTree = "<group>"; };
 		7815E9F316F63201001E8B1E /* ZXWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXWriter.h; sourceTree = "<group>"; };
 		7815EAAB16F63256001E8B1E /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		7815EAAE16F65312001E8B1E /* blue_row.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blue_row.png; sourceTree = "<group>"; };
+		7815EAAF16F65312001E8B1E /* blue_row@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue_row@2x.png"; sourceTree = "<group>"; };
+		7815EAB216F65443001E8B1E /* scan_window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan_window.png; sourceTree = "<group>"; };
+		7815EAB316F65443001E8B1E /* scan_window@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scan_window@2x.png"; sourceTree = "<group>"; };
 		7825933F16E3AE1D00FB2A80 /* name_block@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "name_block@2x.png"; sourceTree = "<group>"; };
 		7825934016E3AE1D00FB2A80 /* name_block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = name_block.png; sourceTree = "<group>"; };
 		7825934116E3AE1D00FB2A80 /* signature@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signature@2x.png"; sourceTree = "<group>"; };
@@ -1389,6 +1397,10 @@
 		784A229716E270370066868D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7815EAB216F65443001E8B1E /* scan_window.png */,
+				7815EAB316F65443001E8B1E /* scan_window@2x.png */,
+				7815EAAE16F65312001E8B1E /* blue_row.png */,
+				7815EAAF16F65312001E8B1E /* blue_row@2x.png */,
 				7815E85D16F63200001E8B1E /* ZXingObjC */,
 				7828DDD916E8090D00B1A42B /* map images */,
 				7828DDD516E7F93E00B1A42B /* grey_row.png */,
@@ -1491,6 +1503,10 @@
 				7828DDD716E7F93E00B1A42B /* grey_row.png in Resources */,
 				7828DDD816E7F93E00B1A42B /* grey_row@2x.png in Resources */,
 				7828DDDB16E8091A00B1A42B /* Map_324.png in Resources */,
+				7815EAB016F65312001E8B1E /* blue_row.png in Resources */,
+				7815EAB116F65312001E8B1E /* blue_row@2x.png in Resources */,
+				7815EAB416F65444001E8B1E /* scan_window.png in Resources */,
+				7815EAB516F65444001E8B1E /* scan_window@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
