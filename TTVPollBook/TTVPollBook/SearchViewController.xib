@@ -276,7 +276,7 @@
 								<float key="scoringTypeFloat">29</float>
 								<int key="contentType">3</int>
 							</object>
-							<object class="IBNSLayoutConstraint" id="376880548">
+							<object class="IBNSLayoutConstraint" id="193300025">
 								<reference key="firstItem" ref="734792485"/>
 								<int key="firstAttribute">3</int>
 								<int key="relation">0</int>
@@ -365,7 +365,7 @@
 						<int key="objectID">22</int>
 						<reference key="object" ref="734792485"/>
 						<array class="NSMutableArray" key="children">
-							<object class="IBNSLayoutConstraint" id="980078142">
+							<object class="IBNSLayoutConstraint" id="390181400">
 								<reference key="firstItem" ref="734792485"/>
 								<int key="firstAttribute">7</int>
 								<int key="relation">0</int>
@@ -381,7 +381,7 @@
 								<float key="scoringTypeFloat">9</float>
 								<int key="contentType">1</int>
 							</object>
-							<object class="IBNSLayoutConstraint" id="623867214">
+							<object class="IBNSLayoutConstraint" id="187145680">
 								<reference key="firstItem" ref="734792485"/>
 								<int key="firstAttribute">8</int>
 								<int key="relation">0</int>
@@ -440,12 +440,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">102</int>
-						<reference key="object" ref="376880548"/>
+						<reference key="object" ref="193300025"/>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">103</int>
-						<reference key="object" ref="623867214"/>
+						<reference key="object" ref="187145680"/>
 						<reference key="parent" ref="734792485"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -455,7 +455,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">107</int>
-						<reference key="object" ref="980078142"/>
+						<reference key="object" ref="390181400"/>
 						<reference key="parent" ref="734792485"/>
 					</object>
 				</array>
@@ -475,13 +475,13 @@
 					<reference ref="598642484"/>
 					<reference ref="953067231"/>
 					<reference ref="549848163"/>
-					<reference ref="376880548"/>
+					<reference ref="193300025"/>
 					<reference ref="1002548450"/>
 				</array>
 				<string key="22.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<array class="NSMutableArray" key="22.IBViewMetadataConstraints">
-					<reference ref="623867214"/>
-					<reference ref="980078142"/>
+					<reference ref="187145680"/>
+					<reference ref="390181400"/>
 				</array>
 				<boolean value="NO" key="22.IBViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="46.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -512,17 +512,6 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">SearchViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">scanIDAction:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">scanIDAction:</string>
-						<object class="IBActionInfo" key="NS.object.0">
-							<string key="name">scanIDAction:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="listTable">UITableView</string>
 						<string key="scanButton">UIButton</string>
