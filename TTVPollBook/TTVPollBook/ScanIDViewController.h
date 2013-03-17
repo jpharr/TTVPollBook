@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZXCaptureDelegate.h"
 
-@interface ScanIDViewController : UIViewController 
+@interface ScanIDViewController : UIViewController <ZXCaptureDelegate>
 
 @end

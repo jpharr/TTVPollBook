@@ -7,8 +7,13 @@
 //
 
 #import "ScanIDViewController.h"
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
+#import "ZXCapture.h"
 
 @interface ScanIDViewController ()
+
+@property (nonatomic, strong) ZXCapture *capture;
 
 @end
 
@@ -21,6 +26,10 @@
         // Custom initialization
     }
     return self;
+}
+
+-(NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscape;
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -40,6 +49,18 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self setCapture:[[ZXCapture alloc] init]];
+    [[self capture] setDelegate:self];
+    [[self capture] setRotation:0.0f];
+    
+    // Use the back camera
+    self.capture.camera = self.capture.back;
+    
+    self.capture.layer.frame = self.view.bounds;
+    [self.view.layer addSublayer:self.capture.layer];
+    CATransform3D transform = CATransform3DMakeRotation(1.57079633, 0, 0, 1.0);
+    self.capture.layer.transform = transform;
+    self.capture.layer.frame = self.view.bounds;
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,6 +71,26 @@
 
 -(IBAction)doneAction:(id)sender{
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(void)scanComplete{
+    [self.capture.layer removeFromSuperlayer];
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - ZXCaptureDelegate Methods
+
+- (void)captureResult:(ZXCapture*)capture result:(ZXResult*)result {
+    if (result) {
+        // Vibrate
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
+        NSLog(@"%@",result);
+
+        [self scanComplete];
+    }
+}
+
+- (void)captureSize:(ZXCapture*)capture width:(NSNumber*)width height:(NSNumber*)height {
 }
 
 
