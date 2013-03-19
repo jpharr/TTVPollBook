@@ -41,6 +41,15 @@
 	self.filteredListContent = [NSMutableArray arrayWithCapacity:[self.listContent count]];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    if (![[[AppDelegate instance]scannedID] isEqualToString:@""]){
+        //we are returning from the scan view with a bar code id
+        [self pullScannedVoter];
+    }
+}
+
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     UILabel *newTitleLabel = [[UILabel alloc] init];
@@ -62,6 +71,26 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)pullScannedVoter{
+	NSFetchRequest *request = [[NSFetchRequest alloc] init];
+	NSEntityDescription *entity = [NSEntityDescription entityForName:@"Voter" inManagedObjectContext:[[AppDelegate instance]managedObjectContext]];
+    [request setEntity:entity];
+    
+    NSPredicate *predicate = [NSPredicate
+                              predicateWithFormat:@"(voterIdentificationID == %@)", [[AppDelegate instance]scannedID]];
+    [request setPredicate:predicate];
+    
+	// Execute the fetch -- create a mutable copy of the result.
+	NSError *error = nil;
+	NSMutableArray *mutableFetchResults = [[[[AppDelegate instance]managedObjectContext] executeFetchRequest:request error:&error] mutableCopy];
+	if (mutableFetchResults == nil) {
+		// Handle the error.
+	}
+    if ([mutableFetchResults count]>0) {
+        [self doRowSelectTasksForVoter:[mutableFetchResults objectAtIndex:0]];
+    }
 }
 
 -(void)pullFullVoterList{
@@ -166,7 +195,7 @@
     label1.text = [NSString stringWithFormat:@"%@, %@", voter.familyName,voter.givenName];
     
 	UILabel *label2 = (UILabel *)[cell.contentView viewWithTag:2];
-    label2.text = [NSString stringWithFormat:@"%@, %@, %@ %@ (%@)", voter.streetAddress, voter.city, voter.state,voter.zipCode,voter.precinctName];
+    label2.text = [NSString stringWithFormat:@"%@, %@, %@ %@ (%@,%@)", voter.streetAddress, voter.city, voter.state,voter.zipCode,voter.precinctName,voter.voterIdentificationID];
     
 	return cell;
 }

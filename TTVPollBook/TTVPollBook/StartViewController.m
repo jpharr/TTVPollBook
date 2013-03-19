@@ -8,6 +8,7 @@
 
 #import "StartViewController.h"
 #import "SearchViewController.h"
+#import "AppDelegate.h"
 
 @interface StartViewController ()
 
@@ -53,6 +54,7 @@
 }
 
 -(IBAction)checkinAction:(id)sender{
+    [[AppDelegate instance] setScannedID:@""];
     SearchViewController *searchView = [[SearchViewController alloc] init];
     [self.navigationController pushViewController:searchView animated:YES];    
 }

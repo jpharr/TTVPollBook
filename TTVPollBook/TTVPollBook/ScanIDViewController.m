@@ -7,6 +7,7 @@
 //
 
 #import "ScanIDViewController.h"
+#import "AppDelegate.h"
 #import <AudioToolbox/AudioToolbox.h>
 #import <AVFoundation/AVFoundation.h>
 #import "ZXCapture.h"
@@ -35,6 +36,9 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    
+    [[AppDelegate instance] setScannedID:@""];
+    
     UILabel *newTitleLabel = [[UILabel alloc] init];
     [newTitleLabel setText:@"November 2012 General Election - 327 Sugarland Precinct"];
     [newTitleLabel setTextColor:[UIColor blackColor]];
@@ -87,7 +91,7 @@
     if (result) {
         // Vibrate
         AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-        NSLog(@"%@",result);
+        [[AppDelegate instance] setScannedID:[NSString stringWithFormat:@"%@", result]];
 
         [self scanComplete];
     }
