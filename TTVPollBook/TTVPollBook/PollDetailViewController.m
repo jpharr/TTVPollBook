@@ -49,15 +49,16 @@
 }
 
 -(IBAction)doneAction:(id)sender{
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
--(IBAction)txtAction:(id)sender{
-    [self.navigationController popViewControllerAnimated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 -(IBAction)printAction:(id)sender{
-    [self.navigationController popViewControllerAnimated:YES];
+    UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Printing Directions..." message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [av show];
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PollDetailViewController : UIViewController
+@interface PollDetailViewController : UIViewController <UIAlertViewDelegate>
 
 @end
