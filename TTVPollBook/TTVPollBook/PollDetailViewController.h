@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PollDetailViewController : UIViewController <UIAlertViewDelegate>
+@property (nonatomic, strong) IBOutlet UIButton *printBtn;
+@property (nonatomic, strong) IBOutlet UIButton *finishBtn;
 
 @end

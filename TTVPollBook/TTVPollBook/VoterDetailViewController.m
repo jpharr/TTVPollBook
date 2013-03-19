@@ -33,6 +33,10 @@
     [[self signatureBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
     
     [[self showPollingLctnBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
+    
+    [[self notMeBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
+    
+    [[self continueCheckinBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -113,7 +117,7 @@
 -(IBAction)saveSignature:(id)sender{
     if (signatureSaved) {
         [[self thanksView] setHidden:NO];
-        [self performSelector:@selector(checkinCompleted) withObject:nil afterDelay:3.0];
+        [self performSelector:@selector(checkinCompleted) withObject:nil afterDelay:5.0];
     }else{
         signatureSaved = YES;
         [[self signatureBtn] setTitle:@"Complete Checkin" forState:UIControlStateNormal];
