@@ -45,10 +45,6 @@
     
     //set up voted status
     [_votedStatusMessage setText:[[[self voter]hasVoted] isEqualToString:@"Yes"]?@"Has voted":@"Has not yet voted"];
-}
-
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
     
     [[self signatureBlock] setImage:[UIImage imageNamed:@"signature_empty.png"]];
     [[self signatureBlock] setHidden:YES];
@@ -56,6 +52,13 @@
     [[self notMeBtn] setHidden:NO];
     [[self continueCheckinBtn] setHidden:NO];
     [[self signatureBtn] setHidden:YES];
+    [[self thanksView]setHidden:YES];
+    
+    signatureSaved = NO;
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
     
     UILabel *newTitleLabel = [[UILabel alloc] init];
     [newTitleLabel setText:@"November 2012 General Election - 327 Sugarland Precinct"];
@@ -74,6 +77,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)checkinCompleted{
+    [self.navigationController popToRootViewControllerAnimated:NO];
+}
+
 -(IBAction)showPollingLocation:(id)sender{
     PollDetailViewController *pollView = [[PollDetailViewController alloc] init];
     [self.navigationController pushViewController:pollView animated:YES];
@@ -82,6 +89,7 @@
 -(IBAction)signAction:(id)sender{
     [[self signatureBlock] setImage:[UIImage imageNamed:@"signature.png"]];
     [[self signItBtn] setHidden:YES];
+    [[self signatureBtn] setTitle:@"Save Signature" forState:UIControlStateNormal];
     [[self signatureBtn] setHidden:NO];
 }
 
@@ -101,5 +109,17 @@
         [self.navigationController pushViewController:pollView animated:YES];
     }
 }
+
+-(IBAction)saveSignature:(id)sender{
+    if (signatureSaved) {
+        [[self thanksView] setHidden:NO];
+        [self performSelector:@selector(checkinCompleted) withObject:nil afterDelay:3.0];
+    }else{
+        signatureSaved = YES;
+        [[self signatureBtn] setTitle:@"Complete Checkin" forState:UIControlStateNormal];
+
+    }
+}
+
 
 @end
