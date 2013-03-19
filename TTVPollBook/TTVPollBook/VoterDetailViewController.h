@@ -12,13 +12,16 @@
 @interface VoterDetailViewController : UIViewController
 
 @property (nonatomic, strong) IBOutlet UIButton *signatureBtn;
-@property (nonatomic, strong) IBOutlet UIButton *printBallotBtn;
 @property (nonatomic, strong) IBOutlet UIButton *showPollingLctnBtn;
-
+@property (nonatomic, strong) IBOutlet UIButton *notMeBtn;
+@property (nonatomic, strong) IBOutlet UIButton *continueCheckinBtn;
+@property (nonatomic, strong) IBOutlet UIButton *signItBtn;
+@property (nonatomic, strong) IBOutlet UIImageView *signatureBlock;
 @property (nonatomic, strong) IBOutlet UILabel *row1Text;
 @property (nonatomic, strong) IBOutlet UILabel *row2Text;
 @property (nonatomic, strong) IBOutlet UILabel *row3Text;
 @property (nonatomic, strong) IBOutlet UILabel *votedStatusMessage;
+@property (nonatomic, strong) IBOutlet UILabel *isThisYouMessage;
 
 @property (nonatomic,strong) Voter *voter;
 

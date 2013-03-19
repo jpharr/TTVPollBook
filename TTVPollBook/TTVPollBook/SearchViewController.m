@@ -166,7 +166,7 @@
     label1.text = [NSString stringWithFormat:@"%@, %@", voter.familyName,voter.givenName];
     
 	UILabel *label2 = (UILabel *)[cell.contentView viewWithTag:2];
-    label2.text = [NSString stringWithFormat:@"%@, %@, %@ %@", voter.streetAddress, voter.city, voter.state,voter.zipCode];
+    label2.text = [NSString stringWithFormat:@"%@, %@, %@ %@ (%@)", voter.streetAddress, voter.city, voter.state,voter.zipCode,voter.precinctName];
     
 	return cell;
 }

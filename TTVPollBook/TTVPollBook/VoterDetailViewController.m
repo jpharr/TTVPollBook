@@ -32,8 +32,6 @@
     //set up button images
     [[self signatureBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
     
-    [[self printBallotBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
-    
     [[self showPollingLctnBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
 }
 
@@ -51,6 +49,14 @@
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
+    
+    [[self signatureBlock] setImage:[UIImage imageNamed:@"signature_empty.png"]];
+    [[self signatureBlock] setHidden:YES];
+    [[self signItBtn] setHidden:YES];
+    [[self notMeBtn] setHidden:NO];
+    [[self continueCheckinBtn] setHidden:NO];
+    [[self signatureBtn] setHidden:YES];
+    
     UILabel *newTitleLabel = [[UILabel alloc] init];
     [newTitleLabel setText:@"November 2012 General Election - 327 Sugarland Precinct"];
     [newTitleLabel setTextColor:[UIColor blackColor]];
@@ -73,8 +79,27 @@
     [self.navigationController pushViewController:pollView animated:YES];
 }
 
--(IBAction)printBallot:(id)sender{
+-(IBAction)signAction:(id)sender{
+    [[self signatureBlock] setImage:[UIImage imageNamed:@"signature.png"]];
+    [[self signItBtn] setHidden:YES];
+    [[self signatureBtn] setHidden:NO];
+}
+
+-(IBAction)notMe:(id)sender{
     [self.navigationController popViewControllerAnimated:YES];
+}
+
+-(IBAction)continueCheckin:(id)sender{
+    
+    if ([[[self voter] precinctName] isEqualToString:@"327"]){
+        [[self notMeBtn] setHidden:YES];
+        [[self continueCheckinBtn] setHidden:YES];
+        [[self signItBtn] setHidden:NO];
+        [[self signatureBlock] setHidden:NO];
+    }else{
+        PollDetailViewController *pollView = [[PollDetailViewController alloc] init];
+        [self.navigationController pushViewController:pollView animated:YES];
+    }
 }
 
 @end
