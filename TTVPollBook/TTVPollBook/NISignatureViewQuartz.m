@@ -9,10 +9,9 @@
 #import <QuartzCore/QuartzCore.h>
 
 @implementation NISignatureViewQuartz
-UIBezierPath *path;
 
 - (void)commonInit {
-    path = [UIBezierPath bezierPath];
+    [self setPath:[UIBezierPath bezierPath]];
     
     // Capture touches
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
@@ -36,7 +35,7 @@ UIBezierPath *path;
 }
 
 - (void)erase {
-    path = [UIBezierPath bezierPath];
+    [self setPath:[UIBezierPath bezierPath]];
     [self setNeedsDisplay];
 }
 
@@ -45,9 +44,9 @@ UIBezierPath *path;
     CGPoint currentPoint = [pan locationInView:self];
     
     if (pan.state == UIGestureRecognizerStateBegan) {
-        [path moveToPoint:currentPoint];
+        [[self path] moveToPoint:currentPoint];
     } else if (pan.state == UIGestureRecognizerStateChanged)
-        [path addLineToPoint:currentPoint];
+        [[self path] addLineToPoint:currentPoint];
     
     [self setNeedsDisplay];
 }
@@ -55,7 +54,7 @@ UIBezierPath *path;
 - (void)drawRect:(CGRect)rect
 {
     [[UIColor blackColor] setStroke];
-    [path stroke];
+    [[self path] stroke];
 }
 
 

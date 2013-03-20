@@ -10,4 +10,6 @@
 
 @interface NISignatureViewQuartz : UIView
 
+@property (strong, nonatomic) UIBezierPath *path;
+
 @end

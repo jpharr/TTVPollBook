@@ -16,11 +16,9 @@ static CGPoint midpoint(CGPoint p0, CGPoint p1) {
 }
 
 @implementation NISignatureViewQuartzQuadratic
-UIBezierPath *path;
-CGPoint previousPoint;
 
 - (void)commonInit {
-    path = [UIBezierPath bezierPath];
+    [self setPath:[UIBezierPath bezierPath]];
     
     // Capture touches
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
@@ -44,22 +42,22 @@ CGPoint previousPoint;
 }
 
 - (void)erase {
-    path = [UIBezierPath bezierPath];
+    [self setPath:[UIBezierPath bezierPath]];
     [self setNeedsDisplay];
 }
 
 
 - (void)pan:(UIPanGestureRecognizer *)pan {
     CGPoint currentPoint = [pan locationInView:self];
-    CGPoint midPoint = midpoint(previousPoint, currentPoint);
+    CGPoint midPoint = midpoint([self previousPoint], currentPoint);
     
     if (pan.state == UIGestureRecognizerStateBegan) {
-        [path moveToPoint:currentPoint];
+        [[self path] moveToPoint:currentPoint];
     } else if (pan.state == UIGestureRecognizerStateChanged) {
-        [path addQuadCurveToPoint:midPoint controlPoint:previousPoint];
+        [[self path] addQuadCurveToPoint:midPoint controlPoint:[self previousPoint]];
     }
     
-    previousPoint = currentPoint;
+    [self setPreviousPoint:currentPoint];
     
     [self setNeedsDisplay];
 }
@@ -67,7 +65,7 @@ CGPoint previousPoint;
 - (void)drawRect:(CGRect)rect
 {
     [[UIColor blackColor] setStroke];
-    [path stroke];
+    [[self path] stroke];
 }
 
 @end

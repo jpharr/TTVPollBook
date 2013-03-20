@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NISignatureViewQuartzQuadratic : UIView
+@property (strong, nonatomic) UIBezierPath *path;
+@property (assign) CGPoint previousPoint;
 
 @end
