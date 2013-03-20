@@ -8,6 +8,7 @@
 
 #import "VoterDetailViewController.h"
 #import "PollDetailViewController.h"
+#import "NISignatureView.h"
 
 @interface VoterDetailViewController ()
 
@@ -37,6 +38,12 @@
     [[self notMeBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
     
     [[self continueCheckinBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
+    
+//    NISignatureView *sigView = [[NISignatureView alloc] initWithFrame:CGRectMake(0.0, 0.0, 300.0, 300.0)];
+//    //UIView *sigView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 300.0, 300.0)];
+//    [sigView setBackgroundColor:[UIColor whiteColor]];
+//    [self.view addSubview:sigView];
+//    [self.view bringSubviewToFront:sigView];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -52,7 +59,6 @@
     
     [[self signatureBlock] setImage:[UIImage imageNamed:@"signature_empty.png"]];
     [[self signatureBlock] setHidden:YES];
-    [[self signItBtn] setHidden:YES];
     [[self notMeBtn] setHidden:NO];
     [[self continueCheckinBtn] setHidden:NO];
     [[self signatureBtn] setHidden:YES];
@@ -90,13 +96,6 @@
     [self.navigationController pushViewController:pollView animated:YES];
 }
 
--(IBAction)signAction:(id)sender{
-    [[self signatureBlock] setImage:[UIImage imageNamed:@"signature.png"]];
-    [[self signItBtn] setHidden:YES];
-    [[self signatureBtn] setTitle:@"Save Signature" forState:UIControlStateNormal];
-    [[self signatureBtn] setHidden:NO];
-}
-
 -(IBAction)notMe:(id)sender{
     [self.navigationController popViewControllerAnimated:YES];
 }
@@ -106,8 +105,9 @@
     if ([[[self voter] precinctName] isEqualToString:@"327"]){
         [[self notMeBtn] setHidden:YES];
         [[self continueCheckinBtn] setHidden:YES];
-        [[self signItBtn] setHidden:NO];
         [[self signatureBlock] setHidden:NO];
+        [[self signatureBtn] setTitle:@"Save Signature" forState:UIControlStateNormal];
+        [[self signatureBtn] setHidden:NO];
     }else{
         PollDetailViewController *pollView = [[PollDetailViewController alloc] init];
         [self.navigationController pushViewController:pollView animated:YES];

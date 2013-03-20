@@ -10,6 +10,9 @@
 		7804A48016F8040200CF62DA /* signature_empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804A47E16F8040200CF62DA /* signature_empty@2x.png */; };
 		7804A48116F8040200CF62DA /* signature_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804A47F16F8040200CF62DA /* signature_empty.png */; };
 		7804A48316F8111200CF62DA /* Map_324@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804A48216F8111200CF62DA /* Map_324@2x.png */; };
+		7804A48616F9385800CF62DA /* NISignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7804A48516F9385800CF62DA /* NISignatureView.m */; };
+		7804A48816F93BE700CF62DA /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7804A48716F93BE700CF62DA /* GLKit.framework */; };
+		7804A48A16F93BF800CF62DA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7804A48916F93BF700CF62DA /* OpenGLES.framework */; };
 		7815E85216F26BAA001E8B1E /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7815E85116F26BAA001E8B1E /* CoreVideo.framework */; };
 		7815E85416F26BBD001E8B1E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7815E85316F26BBD001E8B1E /* AudioToolbox.framework */; };
 		7815E85616F26BC6001E8B1E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7815E85516F26BC6001E8B1E /* AVFoundation.framework */; };
@@ -214,6 +217,8 @@
 		7828DDD716E7F93E00B1A42B /* grey_row.png in Resources */ = {isa = PBXBuildFile; fileRef = 7828DDD516E7F93E00B1A42B /* grey_row.png */; };
 		7828DDD816E7F93E00B1A42B /* grey_row@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7828DDD616E7F93E00B1A42B /* grey_row@2x.png */; };
 		7828DDDB16E8091A00B1A42B /* Map_324.png in Resources */ = {isa = PBXBuildFile; fileRef = 7828DDDA16E8091A00B1A42B /* Map_324.png */; };
+		783EA1C716F95D4C002AED29 /* NISignatureViewQuartzQuadratic.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EA1C616F95D4C002AED29 /* NISignatureViewQuartzQuadratic.m */; };
+		783EA1CA16F96198002AED29 /* NISignatureViewQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EA1C916F96198002AED29 /* NISignatureViewQuartz.m */; };
 		784A229116E270370066868D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A229016E270370066868D /* UIKit.framework */; };
 		784A229316E270370066868D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A229216E270370066868D /* Foundation.framework */; };
 		784A229516E270370066868D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784A229416E270370066868D /* CoreGraphics.framework */; };
@@ -244,6 +249,10 @@
 		7804A47E16F8040200CF62DA /* signature_empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signature_empty@2x.png"; sourceTree = "<group>"; };
 		7804A47F16F8040200CF62DA /* signature_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signature_empty.png; sourceTree = "<group>"; };
 		7804A48216F8111200CF62DA /* Map_324@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map_324@2x.png"; sourceTree = "<group>"; };
+		7804A48416F9385800CF62DA /* NISignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NISignatureView.h; sourceTree = "<group>"; };
+		7804A48516F9385800CF62DA /* NISignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NISignatureView.m; sourceTree = "<group>"; };
+		7804A48716F93BE700CF62DA /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		7804A48916F93BF700CF62DA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7815E85116F26BAA001E8B1E /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		7815E85316F26BBD001E8B1E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		7815E85516F26BC6001E8B1E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -642,6 +651,10 @@
 		7828DDD516E7F93E00B1A42B /* grey_row.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grey_row.png; sourceTree = "<group>"; };
 		7828DDD616E7F93E00B1A42B /* grey_row@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grey_row@2x.png"; sourceTree = "<group>"; };
 		7828DDDA16E8091A00B1A42B /* Map_324.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map_324.png; sourceTree = "<group>"; };
+		783EA1C516F95D4C002AED29 /* NISignatureViewQuartzQuadratic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NISignatureViewQuartzQuadratic.h; sourceTree = "<group>"; };
+		783EA1C616F95D4C002AED29 /* NISignatureViewQuartzQuadratic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NISignatureViewQuartzQuadratic.m; sourceTree = "<group>"; };
+		783EA1C816F96198002AED29 /* NISignatureViewQuartz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NISignatureViewQuartz.h; sourceTree = "<group>"; };
+		783EA1C916F96198002AED29 /* NISignatureViewQuartz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NISignatureViewQuartz.m; sourceTree = "<group>"; };
 		784A228D16E270370066868D /* TTVPollBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTVPollBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		784A229016E270370066868D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		784A229216E270370066868D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -684,6 +697,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7804A48A16F93BF800CF62DA /* OpenGLES.framework in Frameworks */,
+				7804A48816F93BE700CF62DA /* GLKit.framework in Frameworks */,
 				7815EAAC16F63256001E8B1E /* ImageIO.framework in Frameworks */,
 				7815E85C16F26BE7001E8B1E /* SystemConfiguration.framework in Frameworks */,
 				7815E85A16F26BDC001E8B1E /* QuartzCore.framework in Frameworks */,
@@ -1359,6 +1374,8 @@
 		784A228F16E270370066868D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7804A48916F93BF700CF62DA /* OpenGLES.framework */,
+				7804A48716F93BE700CF62DA /* GLKit.framework */,
 				7815EAAB16F63256001E8B1E /* ImageIO.framework */,
 				7815E85B16F26BE6001E8B1E /* SystemConfiguration.framework */,
 				7815E85916F26BDC001E8B1E /* QuartzCore.framework */,
@@ -1377,7 +1394,12 @@
 		784A229616E270370066868D /* TTVPollBook */ = {
 			isa = PBXGroup;
 			children = (
-				7825933E16E3AE0200FB2A80 /* Images */,
+				783EA1C816F96198002AED29 /* NISignatureViewQuartz.h */,
+				783EA1C916F96198002AED29 /* NISignatureViewQuartz.m */,
+				783EA1C516F95D4C002AED29 /* NISignatureViewQuartzQuadratic.h */,
+				783EA1C616F95D4C002AED29 /* NISignatureViewQuartzQuadratic.m */,
+				7804A48416F9385800CF62DA /* NISignatureView.h */,
+				7804A48516F9385800CF62DA /* NISignatureView.m */,
 				784A229F16E270370066868D /* AppDelegate.h */,
 				784A22A016E270370066868D /* AppDelegate.m */,
 				784A22C216E28F8F0066868D /* PollDetailViewController.h */,
@@ -1404,6 +1426,7 @@
 		784A229716E270370066868D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7825933E16E3AE0200FB2A80 /* Images */,
 				7804A47E16F8040200CF62DA /* signature_empty@2x.png */,
 				7804A47F16F8040200CF62DA /* signature_empty.png */,
 				7815EAB216F65443001E8B1E /* scan_window.png */,
@@ -1722,6 +1745,9 @@
 				7815EAA816F63202001E8B1E /* ZXResult.m in Sources */,
 				7815EAA916F63202001E8B1E /* ZXResultPoint.m in Sources */,
 				7815EAAA16F63202001E8B1E /* ZXRGBLuminanceSource.m in Sources */,
+				7804A48616F9385800CF62DA /* NISignatureView.m in Sources */,
+				783EA1C716F95D4C002AED29 /* NISignatureViewQuartzQuadratic.m in Sources */,
+				783EA1CA16F96198002AED29 /* NISignatureViewQuartz.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
