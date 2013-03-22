@@ -200,7 +200,7 @@
     }
 	
 	UILabel *label1 = (UILabel *)[cell.contentView viewWithTag:1];
-    label1.text = [NSString stringWithFormat:@"%@, %@", voter.familyName,voter.givenName];
+    label1.text = [NSString stringWithFormat:@"%@, %@ %@", voter.familyName,voter.givenName, voter.middleName?voter.middleName:@""];
     
 	UILabel *label2 = (UILabel *)[cell.contentView viewWithTag:2];
     label2.text = [NSString stringWithFormat:@"%@, %@, %@ %@ (%@,%@)", voter.streetAddress, voter.city, voter.state,voter.zipCode,voter.precinctName,voter.voterIdentificationID];
@@ -252,14 +252,19 @@
 	 Search the main list for products whose type matches the scope (if selected) and whose name matches searchText; add items that match to the filtered array.
 	 */
 	for (Voter *thisVoter in _listContent)
-	{
-        NSComparisonResult result = [thisVoter.familyName compare:searchText options:(NSCaseInsensitiveSearch|NSDiacriticInsensitiveSearch) range:NSMakeRange(0, [searchText length])];
-        if (result == NSOrderedSame)
+	{	
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:
+                                  @"(SELF contains[cd] %@)", searchText];
+        
+        BOOL resultMiddleName = [predicate evaluateWithObject:thisVoter.middleName];
+        BOOL resultGivenName = [predicate evaluateWithObject:thisVoter.givenName];
+        BOOL resultFamilName = [predicate evaluateWithObject:thisVoter.familyName];
+        
+        if(resultFamilName || resultGivenName || resultMiddleName)
         {
             [self.filteredListContent addObject:thisVoter];
-            NSLog(@"adding filtered item");
-        }
-	}
+        }    
+    }
 }
 
 
