@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7804A48016F8040200CF62DA /* signature_empty@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804A47E16F8040200CF62DA /* signature_empty@2x.png */; };
-		7804A48116F8040200CF62DA /* signature_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804A47F16F8040200CF62DA /* signature_empty.png */; };
 		7804A48316F8111200CF62DA /* Map_324@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7804A48216F8111200CF62DA /* Map_324@2x.png */; };
 		7804A48616F9385800CF62DA /* NISignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7804A48516F9385800CF62DA /* NISignatureView.m */; };
 		7804A48816F93BE700CF62DA /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7804A48716F93BE700CF62DA /* GLKit.framework */; };
@@ -248,8 +246,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7804A47E16F8040200CF62DA /* signature_empty@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "signature_empty@2x.png"; sourceTree = "<group>"; };
-		7804A47F16F8040200CF62DA /* signature_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signature_empty.png; sourceTree = "<group>"; };
 		7804A48216F8111200CF62DA /* Map_324@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map_324@2x.png"; sourceTree = "<group>"; };
 		7804A48416F9385800CF62DA /* NISignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NISignatureView.h; sourceTree = "<group>"; };
 		7804A48516F9385800CF62DA /* NISignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NISignatureView.m; sourceTree = "<group>"; };
@@ -1341,8 +1337,6 @@
 			children = (
 				7828DDD516E7F93E00B1A42B /* grey_row.png */,
 				7828DDD616E7F93E00B1A42B /* grey_row@2x.png */,
-				7804A47E16F8040200CF62DA /* signature_empty@2x.png */,
-				7804A47F16F8040200CF62DA /* signature_empty.png */,
 				7815EAB216F65443001E8B1E /* scan_window.png */,
 				7815EAB316F65443001E8B1E /* scan_window@2x.png */,
 				7815EAAE16F65312001E8B1E /* blue_row.png */,
@@ -1543,8 +1537,6 @@
 				7815EAB116F65312001E8B1E /* blue_row@2x.png in Resources */,
 				7815EAB416F65444001E8B1E /* scan_window.png in Resources */,
 				7815EAB516F65444001E8B1E /* scan_window@2x.png in Resources */,
-				7804A48016F8040200CF62DA /* signature_empty@2x.png in Resources */,
-				7804A48116F8040200CF62DA /* signature_empty.png in Resources */,
 				7804A48316F8111200CF62DA /* Map_324@2x.png in Resources */,
 				783EA1CF16FA2582002AED29 /* Default-Landscape.png in Resources */,
 				783EA1D016FA2582002AED29 /* Default-Landscape@2x.png in Resources */,
@@ -1832,8 +1824,8 @@
 		784A22B116E270370066868D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jeff Pharr (7F4BV9Z28V)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jeff Pharr (7F4BV9Z28V)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: AppFactory LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: AppFactory LLC";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TTVPollBook/TTVPollBook-Prefix.pch";
 				INFOPLIST_FILE = "TTVPollBook/TTVPollBook-Info.plist";
@@ -1843,8 +1835,8 @@
 					"\"$(SRCROOT)/TTVPollBook/ScanditSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2A2F75AA-42C2-455E-9E05-476529C638E6";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2A2F75AA-42C2-455E-9E05-476529C638E6";
+				PROVISIONING_PROFILE = "E2561DA9-F6E1-46B7-8F99-317EAAAA413D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E2561DA9-F6E1-46B7-8F99-317EAAAA413D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1852,7 +1844,8 @@
 		784A22B216E270370066868D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jeff Pharr (7F4BV9Z28V)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: AppFactory LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: AppFactory LLC";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TTVPollBook/TTVPollBook-Prefix.pch";
 				INFOPLIST_FILE = "TTVPollBook/TTVPollBook-Info.plist";
@@ -1862,7 +1855,8 @@
 					"\"$(SRCROOT)/TTVPollBook/ScanditSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2A2F75AA-42C2-455E-9E05-476529C638E6";
+				PROVISIONING_PROFILE = "E2561DA9-F6E1-46B7-8F99-317EAAAA413D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "E2561DA9-F6E1-46B7-8F99-317EAAAA413D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
