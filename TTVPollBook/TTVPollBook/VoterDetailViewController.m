@@ -47,6 +47,8 @@
     
     [[self continueCheckinBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
     
+    [[self signatureClearBtn] setBackgroundImage:[[UIImage imageNamed:@"button_grey.png"] stretchableImageWithLeftCapWidth:10 topCapHeight:5] forState:UIControlStateNormal];
+    
 //    NISignatureView *sigView = [[NISignatureView alloc] initWithFrame:CGRectMake(0.0, 0.0, 300.0, 300.0)];
 //    //UIView *sigView = [[UIView alloc] initWithFrame:CGRectMake(0.0, 0.0, 300.0, 300.0)];
 //    [sigView setBackgroundColor:[UIColor whiteColor]];
@@ -65,11 +67,12 @@
     //set up voted status
     [_votedStatusMessage setText:[[[self voter]hasVoted] isEqualToString:@"Yes"]?@"Has voted":@"Has not yet voted"];
     
-    [[self signatureBlock] setImage:[UIImage imageNamed:@"signature_empty.png"]];
+    [[self signatureBlock] setImage:[UIImage imageNamed:@"signature.png"]];
     [[self signatureBlock] setHidden:YES];
     [[self notMeBtn] setHidden:NO];
     [[self continueCheckinBtn] setHidden:NO];
     [[self signatureBtn] setHidden:YES];
+    [[self signatureClearBtn] setHidden:YES];
     [[self thanksView]setHidden:YES];
     
     signatureSaved = NO;
@@ -116,6 +119,7 @@
         [[self signatureBlock] setHidden:NO];
         [[self signatureBtn] setTitle:@"Save Signature" forState:UIControlStateNormal];
         [[self signatureBtn] setHidden:NO];
+        [[self signatureClearBtn] setHidden:NO];
     }else{
         PollDetailViewController *pollView = [[PollDetailViewController alloc] init];
         [self.navigationController pushViewController:pollView animated:YES];
