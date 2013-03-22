@@ -53,7 +53,11 @@
     authenticated = NO;
     [[self authenticationView] setHidden:NO];
     
-    
+    [self performSelector:@selector(hideSplashScreen) withObject:nil afterDelay:5.0];
+}
+
+-(void)hideSplashScreen{
+    [[self splashScreen] setHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning
