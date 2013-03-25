@@ -73,11 +73,15 @@
 }
 
 -(IBAction)startSession:(id)sender{
-    [[self precinctID] endEditing:YES];
-    [[self authenticationCode] endEditing:YES];
-    
-    [[self authenticationView] setHidden:YES];
-    [[self checkinButton] setHidden:NO];
+    if ([[[[self authenticationCode] text] uppercaseString] isEqualToString:@"MAGIC"] ) {
+        [[self precinctID] endEditing:YES];
+        [[self authenticationCode] endEditing:YES];
+        
+        [[self authenticationView] setHidden:YES];
+        [[self checkinButton] setHidden:NO];
+    }else{
+        [[self authenticationCode] setPlaceholder:@"Code Not Valid"];
+    }
 }
 
 @end

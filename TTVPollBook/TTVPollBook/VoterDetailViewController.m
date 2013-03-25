@@ -137,5 +137,8 @@
     }
 }
 
+-(IBAction)eraseSignature:(id)sender{
+    [(NISignatureViewQuartz *)[self signatureCaptureView] erase];
+}
 
 @end

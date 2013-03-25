@@ -80,7 +80,6 @@
 						<string key="NSFrame">{{851, 522}, {126, 29}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -180,7 +179,7 @@
 							<object class="IBUIButton" id="410152726">
 								<reference key="NSNextResponder" ref="341413003"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{326, 259}, {210, 44}}</string>
+								<string key="NSFrame">{{326, 225}, {210, 44}}</string>
 								<reference key="NSSuperview" ref="341413003"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView" ref="107705409"/>
@@ -482,17 +481,20 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">StartViewController</string>
 					<string key="superclassName">UIViewController</string>
-					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">startSession:</string>
-						<string key="NS.object.0">id</string>
-					</object>
-					<object class="NSMutableDictionary" key="actionInfosByName">
-						<string key="NS.key.0">startSession:</string>
-						<object class="IBActionInfo" key="NS.object.0">
+					<dictionary class="NSMutableDictionary" key="actions">
+						<string key="checkinAction:">id</string>
+						<string key="startSession:">id</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="actionInfosByName">
+						<object class="IBActionInfo" key="checkinAction:">
+							<string key="name">checkinAction:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="startSession:">
 							<string key="name">startSession:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</object>
+					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="adminButton">UIButton</string>
 						<string key="authenticationCode">UITextField</string>

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Voter.h"
+#import "NISignatureViewQuartz.h"
 
 @interface VoterDetailViewController : UIViewController{
     BOOL signatureSaved;
@@ -25,7 +26,9 @@
 @property (nonatomic, strong) IBOutlet UILabel *votedStatusMessage;
 @property (nonatomic, strong) IBOutlet UILabel *isThisYouMessage;
 @property (nonatomic, strong) IBOutlet UIView *thanksView;
+@property (nonatomic, strong) Voter *voter;
+@property (nonatomic, strong) IBOutlet UIView *signatureCaptureView;
 
-@property (nonatomic,strong) Voter *voter;
+-(IBAction)eraseSignature:(id)sender;
 
 @end
