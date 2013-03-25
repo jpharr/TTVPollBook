@@ -10,7 +10,7 @@
 #import "Voter.h"
 #import "NISignatureViewQuartz.h"
 
-@interface VoterDetailViewController : UIViewController{
+@interface VoterDetailViewController : UIViewController <UIAlertViewDelegate>{
     BOOL signatureSaved;
 }
 

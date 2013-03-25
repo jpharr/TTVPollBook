@@ -99,6 +99,7 @@
 }
 
 -(void)checkinCompleted{
+    [[self voter] setHasVoted:@"Yes"];
     [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
@@ -114,12 +115,17 @@
 -(IBAction)continueCheckin:(id)sender{
     
     if ([[[self voter] precinctName] isEqualToString:@"327"]){
-        [[self notMeBtn] setHidden:YES];
-        [[self continueCheckinBtn] setHidden:YES];
-        [[self signatureBlock] setHidden:NO];
-        [[self signatureBtn] setTitle:@"Save Signature" forState:UIControlStateNormal];
-        [[self signatureBtn] setHidden:NO];
-        [[self signatureClearBtn] setHidden:NO];
+        if(![[[self voter]hasVoted] isEqualToString:@"Yes"]){
+            [[self notMeBtn] setHidden:YES];
+            [[self continueCheckinBtn] setHidden:YES];
+            [[self signatureBlock] setHidden:NO];
+            [[self signatureBtn] setTitle:@"Save Signature" forState:UIControlStateNormal];
+            [[self signatureBtn] setHidden:NO];
+            [[self signatureClearBtn] setHidden:NO];
+        }else{
+            UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Already Voted" message:@"Additional votes can be purchased for $50 each in the follwing cities..." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [av show];
+        }
     }else{
         PollDetailViewController *pollView = [[PollDetailViewController alloc] init];
         [self.navigationController pushViewController:pollView animated:YES];
@@ -139,6 +145,10 @@
 
 -(IBAction)eraseSignature:(id)sender{
     [(NISignatureViewQuartz *)[self signatureCaptureView] erase];
+}
+
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    [self.navigationController popToRootViewControllerAnimated:NO];
 }
 
 @end
