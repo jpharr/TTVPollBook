@@ -80,6 +80,7 @@
         [[self authenticationView] setHidden:YES];
         [[self checkinButton] setHidden:NO];
     }else{
+        [[self authenticationCode] setText:@""];
         [[self authenticationCode] setPlaceholder:@"Code Not Valid"];
     }
 }
