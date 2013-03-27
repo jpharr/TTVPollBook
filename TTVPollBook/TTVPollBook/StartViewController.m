@@ -72,8 +72,9 @@
     [self.navigationController pushViewController:searchView animated:YES];    
 }
 
+// Check password
 -(IBAction)startSession:(id)sender{
-    if ([[[[self authenticationCode] text] uppercaseString] isEqualToString:@"MAGIC"] ) {
+    if ([[[[self authenticationCode] text] uppercaseString] isEqualToString:@"A05P"] ) {
         [[self precinctID] endEditing:YES];
         [[self authenticationCode] endEditing:YES];
         

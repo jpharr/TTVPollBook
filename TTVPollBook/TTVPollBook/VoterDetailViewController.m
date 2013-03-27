@@ -123,7 +123,7 @@
             [[self signatureBtn] setHidden:NO];
             [[self signatureClearBtn] setHidden:NO];
         }else{
-            UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"Already Voted" message:@"Additional votes can be purchased for $50 each in the follwing cities..." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            UIAlertView *av = [[UIAlertView alloc] initWithTitle:@"You have already voted." message:@"You checked in at Sugarland Precint to vote a few minutes ago." delegate:self cancelButtonTitle:@"Finish" otherButtonTitles:nil];
             [av show];
         }
     }else{
